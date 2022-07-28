@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
-
-
-
 h1, p {
   margin: 0;
 }
@@ -61,11 +57,15 @@ font-size: 90%;
   padding: 1rem;
 }
 .rsvp:hover {
-  box-shadow: 0 0 5px 0 #bbbbbb;
+  box-shadow: 0 0 5px 0 var(--ch-cream);
+}
+.rsvp:active {
+  box-shadow: inset 0 0 3px var(--ch-cream)
 }
 .rsvp>h3 {
   margin: 0;
   text-shadow: inherit;
+  user-select: none;
 }
 .save-date{
   margin-top: 2rem;
