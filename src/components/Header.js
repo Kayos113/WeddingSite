@@ -37,9 +37,9 @@ function Header() {
       <div className="header">
         <div className="countdown">
           <div className="clock-card">
-            <p>{timeLeft.days>10?timeLeft.days:"0"+timeLeft.days} days</p>
-            <p>{timeLeft.hours>10?timeLeft.hours:"0"+timeLeft.hours} hours</p>
-            <p>{timeLeft.minutes>10?timeLeft.minutes:"0"+timeLeft.minutes} minutes</p>
+            <p>{timeLeft.days>=10?timeLeft.days:"0"+timeLeft.days} days</p>
+            <p>{timeLeft.hours>=10?timeLeft.hours:"0"+timeLeft.hours} hours</p>
+            <p>{timeLeft.minutes>=10?timeLeft.minutes:"0"+timeLeft.minutes} minutes</p>
             <p>until wedding</p>
           </div>
         </div>
