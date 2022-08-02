@@ -1,0 +1,20 @@
+:root {
+  --ch-white: #EEEBDD;
+  --ch-cream: #D8B6A4;
+  --ch-maroon: #630000;
+  --ch-black: #000000;
+}
+
+.Header-Component {
+  min-width:100vw;
+  min-height: 100vh;
+}
+
+.header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../../images/proposal_knee.JPG"), linear-gradient(180deg, var(--ch-white) 0%, var(--ch-cream) 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
