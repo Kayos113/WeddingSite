@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
 :root {
   --ch-white: #EEEBDD;
   --ch-cream: #D8B6A4;
@@ -5,16 +7,35 @@
   --ch-black: #000000;
 }
 
+h1, p {
+  margin: 0;
+}
+
 .Header-Component {
   min-width:100vw;
   min-height: 100vh;
+  color: var(--ch-white);
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
 }
 
 .header {
   height: 100vh;
   width: 100vw;
-  background-image: url("../../images/proposal_knee.JPG"), linear-gradient(180deg, var(--ch-white) 0%, var(--ch-cream) 100%);
+  background-image: url("../../images/proposal_knee_wide.jpg"), linear-gradient(180deg, var(--ch-white) 0%, var(--ch-cream) 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.text-card {
+  display: inline-block;
+  text-align: center;
+  background: var(--ch-maroon);
+  padding: 6rem 2rem;
+  border-radius: 3rem;
+}
+.subscript {
+  margin-top: 3rem;
+  font-size: 1.5rem;
 }
