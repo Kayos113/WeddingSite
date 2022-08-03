@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-:root {
-  --ch-white: #EEEBDD;
-  --ch-cream: #D8B6A4;
-  --ch-maroon: #630000;
-  --ch-black: #000000;
-}
+
 
 h1, p {
   margin: 0;
@@ -14,7 +9,7 @@ h1, p {
 .Header-Component {
   min-width:100vw;
   min-height: 100vh;
-  color: var(--ch-white);
+  color: var(--ch-cream);
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
 }
@@ -22,20 +17,52 @@ h1, p {
 .header {
   height: 100vh;
   width: 100vw;
-  background-image: url("../../images/proposal_knee_wide.jpg"), linear-gradient(180deg, var(--ch-white) 0%, var(--ch-cream) 100%);
+  background-image: url("../../images/proposal_knee_wide.jpg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-position: left;
+  background-size: contain;
 }
 
 .text-card {
+  margin-top: 8vh;
   display: inline-block;
-  text-align: center;
+  text-align: right;
   background: var(--ch-maroon);
-  padding: 6rem 2rem;
-  border-radius: 3rem;
+  padding: 3rem 6rem 4rem 3rem;
+  border-radius: 30% 0 0 20%;
+  float: right;
+  max-width: 40vw;
+}
+.text-card>img{
+  width: 35vw;
+}
+.date {
+  max-width: 55%;
+}
+.date>p {
+  margin: 0;
+}
+.rsvp {
+  background-color: var(--ch-black);
+  border-radius: 10%;
+  text-align: center;
+  padding: 1rem;
+}
+.rsvp:hover {
+  box-shadow: 0 0 5px 0 #bbbbbb;
+}
+.rsvp>h3 {
+  margin: 0;
+  text-shadow: inherit;
+}
+.save-date{
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 .subscript {
   margin-top: 3rem;
   font-size: 1.5rem;
+  text-align: left;
 }
