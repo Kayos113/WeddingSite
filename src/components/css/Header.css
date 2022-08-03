@@ -26,13 +26,13 @@ h1, p {
 .countdown {
 text-align: right;
 font-size: 90%;
-padding-top: 1%;
-margin-right: 10px;
 }
 .clock-card {
   position: absolute;
   left: 89vw;
   text-align: left;
+  background-color: var(--ch-maroon);
+  padding: 1rem 0 5rem 1rem;
 }
 
 .text-card {
