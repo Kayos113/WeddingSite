@@ -52,7 +52,7 @@ function Header() {
               <p>September 16, 2023</p>
             </div>
             <div className="rsvp">
-              <h3>RSVP ↓</h3>
+              <h3>Info ↓</h3>
             </div>
           </div>
         </div>
