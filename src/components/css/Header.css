@@ -15,33 +15,36 @@ h1, p {
 }
 
 .header {
-  text-align: right;
   height: 100vh;
   width: 100vw;
-  background-image: url("../../images/proposal_knee_wide.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  background-size: cover;
+}
+
+.background-image {
+  position: absolute;
+  top:0;
+  right:0;
+  z-index:-1;
+
+  width: 85vw;
+  height: auto;
 }
 
 .countdown {
-text-align: right;
 font-size: 90%;
 }
 .clock-card {
   display: inline-block;
   text-align: left;
   background-color: var(--ch-maroon);
-  padding: 1rem 3rem 2rem 1rem;
+  padding: 1rem 3rem 2rem 2rem;
 }
 
 .text-card {
   display: inline-block;
-  text-align: right;
+  text-align: center;
   background: var(--ch-maroon);
-  padding: 3rem 3rem 4rem 2rem;
-  border-radius: 30% 0 0 20%;
-  float: right;
+  padding: 2rem 2rem 6rem 2rem;
+  border-radius: 0 0 20% 0;
   max-width: 40vw;
 }
 .text-card>img{
@@ -54,6 +57,7 @@ font-size: 90%;
   margin: 0;
 }
 .rsvp {
+  margin-right: 8%;
   background-color: var(--ch-black);
   border-radius: 10%;
   text-align: center;
@@ -74,7 +78,7 @@ font-size: 90%;
   margin-top: 2rem;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .subscript {
   margin-top: 3rem;
