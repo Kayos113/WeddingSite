@@ -2,5 +2,5 @@
 
 .information {
   height: 100vh;
-  background: limegreen;
+  background: var(--ch-cream);
 }

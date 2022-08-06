@@ -11,7 +11,7 @@ h1, p {
   min-height: 100vh;
   color: var(--ch-cream);
   font-family: "Dancing Script", cursive;
-  font-size: 3rem;
+  font-size: 5vh;
 }
 
 .header {
@@ -20,30 +20,29 @@ h1, p {
 }
 
 .background-image {
-  position: absolute;
+  position: fixed;
   top:0;
   right:0;
   z-index:-1;
-
-  width: 85vw;
+  box-shadow: inset 10rem 20rem var(--ch-black);
   height: auto;
+  width: 84vw;
 }
 
 .countdown {
-font-size: 90%;
+
 }
 .clock-card {
   display: inline-block;
   text-align: left;
-  background-color: var(--ch-maroon);
-  padding: 1rem 3rem 2rem 2rem;
+  padding: 4rem 3rem 2rem 3rem;
 }
 
 .text-card {
   display: inline-block;
   text-align: center;
   background: var(--ch-maroon);
-  padding: 2rem 2rem 6rem 2rem;
+  padding: 2rem 2rem 6rem 3rem;
   border-radius: 0 0 20% 0;
   max-width: 40vw;
 }
