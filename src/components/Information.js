@@ -3,7 +3,7 @@ import "./css/Information.css"
 function Information() {
 
   return (
-    <div className="information">
+    <div className="information" id="information">
     </div>
   )
 }
