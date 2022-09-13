@@ -11,9 +11,10 @@ function Banner() {
           <p className="subscript">Save the Date:</p>
           <p>September 16, 2023</p>
         </div>
-        <div className="rsvp">
+        <a className="rsvp" href="#information">
           <h3>Info ↓</h3>
-        </div>
+        </a>
+
       </div>
     </div>
   );

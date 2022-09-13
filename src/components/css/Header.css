@@ -24,7 +24,6 @@ h1, p {
   top:0;
   right:0;
   z-index:-1;
-  box-shadow: inset 10rem 20rem var(--ch-black);
   height: auto;
   width: 84vw;
 }
