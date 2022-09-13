@@ -1,5 +1,5 @@
 import React from "react";
-import floral from "../images/floral-vector-cream.svg";
+import floral from "./images/floral-vector-cream.svg";
 
 function Banner() {
   return (

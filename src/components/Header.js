@@ -2,7 +2,7 @@ import React from "react";
 import Banner from "./Banner.js";
 import Countdown from "./Countdown.js";
 import "./css/Header.css";
-import background from "../images/court_gaze_close_4898x3265.jpg";
+import background from "./images/court_gaze_close_4898x3265.jpg";
 
 function Header() {
 
