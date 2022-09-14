@@ -8,11 +8,11 @@ function Banner() {
       <h1>Natalie and William</h1>
       <div className="save-date">
         <div className="date">
-          <p className="subscript">Save the Date:</p>
-          <p>September 16, 2023</p>
+          <h6 className="subscript">Save the Date:</h6>
+          <h6>September 16, 2023</h6>
         </div>
         <a className="rsvp" href="#information">
-          <h3>Info ↓</h3>
+          <h6>Info ↓</h6>
         </a>
 
       </div>

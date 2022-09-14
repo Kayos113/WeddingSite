@@ -14,14 +14,26 @@ function Information() {
       </a>
       <h4>Estates By Brophy</h4>
       <p>Fishs Eddy, New York 13774</p>
+      <br/>
+      <h4>Accomodations</h4>
+      <p>Some Accomodations On-site</p>
+      <p>Other Accomodation 15-20 min drive away</p>
     </article>
 
     <article>
-      <h1>Accomodations</h1>
-      <p>Some Accomodations On-site<br/>
-      Other Accomodation 15-20 min drive away</p>
+      <h1>Dates</h1>
+      <p>The event will be held over the entire weekend<br/>with the ceremony occuring Saturday.</p>
+      <p>Guests can arrive as early as Thursday to enjoy<br/>beautiful upstate New York with us.</p>
+      <p>Help us make our memory, and make some of your own!</p>
     </article>
-      </div>
+
+    <article>
+      <h1>Catering, RSVP, Registry & more</h1>
+      <p>The evening of the wedding will be catered as we host the reception. All other food for the weekend will not be supplied.</p>
+      <br/>
+      <p>RSVP and Meal selection system incoming...</p>
+    </article>
+  </div>
   )
 }
 

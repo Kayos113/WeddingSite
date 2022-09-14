@@ -1,5 +1,5 @@
 .maroon-to-cream {
   min-width: 100vw;
   min-height: 50vh;
-  background: linear-gradient(180deg, var(--ch-maroon) 0%, var(--ch-maroon) 35%, var(--ch-cream) 100%);
+  background: linear-gradient(180deg, var(--ch-maroon) 0%, var(--ch-maroon) 35%, var(--ch-white) 100%);
 }
