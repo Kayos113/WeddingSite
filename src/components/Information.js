@@ -1,5 +1,6 @@
 import "./css/Information.css"
 import brophyAerial from "./images/brophy_aerial.jpg";
+const brophyLink = "https://estatesbybrophy.com/";
 
 function Information() {
 
@@ -7,12 +8,20 @@ function Information() {
     <div className="information" id="information">
 
     <article>
-      <a href="https://estatesbybrophy.com/" rel="noreferrer" target="_blank" class="image">
+      <h1>Location</h1>
+      <a href={brophyLink} rel="noreferrer" target="_blank" class="image">
         <img src={brophyAerial} alt="Estates by Brophy - Aerial View" />
       </a>
+      <h4>Estates By Brophy</h4>
+      <p>Fishs Eddy, New York 13774</p>
     </article>
 
-    </div>
+    <article>
+      <h1>Accomodations</h1>
+      <p>Some Accomodations On-site<br/>
+      Other Accomodation 15-20 min drive away</p>
+    </article>
+      </div>
   )
 }
 

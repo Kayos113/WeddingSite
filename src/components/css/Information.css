@@ -3,41 +3,46 @@
 .information {
   height: 100vh;
   background: var(--ch-cream);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+article {
+  background-color: cyan;
+  border-radius: 1.75rem;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 45vw;
+  min-width: 45vw;
+}
+article:first-child {
+  padding-top: 2vw;
+}
+article>* {
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+article:last-child {
+  padding-bottom: 2vw;
 }
 
 /* Image */
 .image {
   border-radius: 1.75rem;
   border: 0;
-  display: inline-block;
-  position: relative; }
+  display: inline-flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
   .image img {
     border-radius: 1.75rem;
-    display: block; }
-  .image.left, .image.right {
-    max-width: 40%; }
-    .image.left img, .image.right img {
-      width: 100%; }
-  .image.left {
-    float: left;
-    padding: 0 1.5em 1em 0;
-    top: 0.25em; }
-  .image.right {
-    float: right;
-    padding: 0 0 1em 1.5em;
-    top: 0.25em; }
-  .image.fit {
     display: block;
-    margin: 0 0 2em 0;
-    width: 100%; }
-    .image.fit img {
-      width: 100%; }
-  .image.main {
-    display: block;
-    margin: 0 0 3em 0;
-    width: 100%; }
-    .image.main img {
-      width: 100%; }
+    width: 75%;
+    height: auto;
+  }
+
 
 a.image {
   overflow: hidden; }
