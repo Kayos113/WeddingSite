@@ -1,70 +1,47 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hunter-Knapp Wedding Website
 
-## Available Scripts
+This project is a React built static site to be used as a digital save the date by Natalie Hunter and William Knapp for their wedding.
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+**Client:** React, CSS
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**Server:** Node
 
-### `npm run build`
+## Color Reference
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Color Pallete Selected with [Colorhunt.co](https://colorhunt.co/palette/eeebddd8b6a4630000000000)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Example Color | ![#EEEBDD](https://via.placeholder.com/10/EEEBDD?text=+) #EEEBDD |
+| Example Color | ![#D8B6A4](https://via.placeholder.com/10/D8B6A4?text=+) #D8B6A4 |
+| Example Color | ![#630000](https://via.placeholder.com/10/630000?text=+) #630000 |
+| Example Color | ![#000000](https://via.placeholder.com/10/000000?text=+) #000000 |
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- [@kayos_113](https://www.github.com/kayos113)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Demo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Insert gif or link to demo
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Lessons Learned
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+I built this as I was beginning to dig more into the intricacies of CSS so while I made sure to make use of React features to make the website, namely to make the countdown clock, this site could have been more easily built as a static html site with a comprehensive CSS file.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+This did force me to get tricky with the CSS, especially as I made choices later in the build, such as adding a parralax scrolling effect. Namely I had to make sure to contend with the fact that the background image used in the header is actually an img tag with a position of absolute. This means as I was using background images and articles later in the build to delineate information cards I had to be sure their backgrounds covered the img tag completely.
+## Roadmap
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Add more features
+    - Add RSVP signup page
+    - Add RSVP database (incl. plus one and meal selection)
