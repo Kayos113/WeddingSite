@@ -65,6 +65,8 @@ article:last-child{
   }
   .par_three {
     background-image: url("../images/proposal_point.JPG");
+    background-position: bottom;
+    /* background-position: bottom is more vissually pleasing as it leaves the ring in view at the bottom of the page. */
   }
 
 
