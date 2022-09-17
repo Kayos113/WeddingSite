@@ -26,10 +26,11 @@ function Information() {
 
     <article>
       <h1>Dates</h1>
-      <p>The event will be held over the entire weekend<br/> 9/14/23 - 9/17/23 with the ceremony occuring Saturday.</p>
-      <p>Guests can arrive as early as Thursday to enjoy<br/>beautiful upstate New York with us.</p>
+      <p>The event will be held over the entire weekend<br/> 9/15/23 - 9/17/23 with the ceremony occuring Saturday.</p>
+      <p>Guests can arrive as early as Friday to enjoy<br/>beautiful upstate New York with us.</p>
       <p>Help us make our memory, and make some of your own!</p>
-    </article>
+      {// <p>S'mores may be included.</p>
+    }</article>
 
     <div class="parralax par_three"></div>
 
