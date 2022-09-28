@@ -29,8 +29,8 @@ article>p {
 article>*:last-child {
   padding-bottom: 3rem;
 }
-article:last-child{
-  padding-bottom: 5rem;
+article:last-child>*:last-child{
+  padding-bottom: 1.5rem;
 }
 
 /* Image */
