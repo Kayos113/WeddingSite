@@ -47,12 +47,11 @@ article:last-child>*:last-child{
   }
 
   .parralax {
+    width: 100vw;
+    min-height: 84vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    min-height: 90vh;
-    width: 100vw;
   }
   .par_one {
   background-image: url("../images/proposal_knee_wide.jpg");
@@ -66,6 +65,11 @@ article:last-child>*:last-child{
     background-image: url("../images/proposal_point.JPG");
     background-position: bottom left;
     /* background-position: bottom is more vissually pleasing as it leaves the ring in view at the bottom of the page. */
+  }
+  @media only screen and (min-width: 768px) {
+    .parralax {
+      background-attachment: fixed;
+    }
   }
 
 

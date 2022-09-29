@@ -12,6 +12,9 @@ h1 {
   width: 100vw;
 }
 
+.background-image {
+  width: 100%;
+}
 @media only screen and (min-width: 768px) {
   .background-image {
     position: fixed;
@@ -19,7 +22,7 @@ h1 {
     right:0;
     z-index:-1;
     height: auto;
-    width: 84%;
+    margin: 0;
   }
 }
 
