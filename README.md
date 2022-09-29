@@ -29,10 +29,6 @@ Color Pallete Selected with [Colorhunt.co](https://colorhunt.co/palette/eeebddd8
 - [@kayos_113](https://www.github.com/kayos113)
 
 
-## Demo
-
-Insert gif or link to demo
-
 
 ## Lessons Learned
 
