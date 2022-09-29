@@ -6,6 +6,11 @@ h1 {
   min-width:100vw;
   min-height: 100vh;
 }
+@media only screen and (min-width: 768px) {
+  .Header-Component {
+    text-align: left;
+  }
+}
 
 .header {
   height: 100vh;
@@ -13,10 +18,13 @@ h1 {
 }
 
 .background-image {
-  width: 100%;
+  width: 100vw;
+  height: auto;
 }
 @media only screen and (min-width: 768px) {
+  /* If the user is using a laptop or desktop computer... */
   .background-image {
+    width: 80vw;
     position: fixed;
     top:0;
     right:0;
@@ -29,8 +37,13 @@ h1 {
 
 .clock-card {
   display: inline-block;
-  text-align: left;
-  padding: 2rem 3rem 2rem 3rem;
+  padding: 5rem 3rem 5rem 3rem;
+  background: var(--ch-maroon);
+}
+@media only screen and (min-width: 768px) {
+  .clock-card {
+    text-align: left;
+  }
 }
 
 .text-card {
