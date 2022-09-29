@@ -56,13 +56,15 @@ article:last-child>*:last-child{
   }
   .par_one {
   background-image: url("../images/proposal_knee_wide.jpg");
+  background-position: left;
   }
   .par_two {
     background-image: url("../images/engagement_party.JPG");
+    background-position: center;
   }
   .par_three {
     background-image: url("../images/proposal_point.JPG");
-    background-position: bottom;
+    background-position: bottom left;
     /* background-position: bottom is more vissually pleasing as it leaves the ring in view at the bottom of the page. */
   }
 

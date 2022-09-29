@@ -1,4 +1,4 @@
-h1, p {
+h1 {
   margin: 0;
 }
 
@@ -18,7 +18,7 @@ h1, p {
   right:0;
   z-index:-1;
   height: auto;
-  width: 84vw;
+  width: 84%;
 }
 
 .countdown {
@@ -61,7 +61,7 @@ h1, p {
 .rsvp:active {
   box-shadow: inset 0 0 3px var(--ch-cream)
 }
-.rsvp>h3 {
+.rsvp>h6 {
   margin: 0;
   text-shadow: inherit;
   user-select: none;

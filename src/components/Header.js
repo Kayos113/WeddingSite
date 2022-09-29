@@ -11,7 +11,7 @@ function Header() {
       <div className="header">
 
         <img src={background} className="background-image" alt="" />
-
+        
         <Banner />
 
         <Countdown />
