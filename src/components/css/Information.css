@@ -48,27 +48,24 @@ article:last-child>*:last-child{
 
   .parralax {
     width: 100vw;
-    min-height: 84vh;
-    background-size: cover;
+    min-height: 60vh;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
   }
   .par_one {
   background-image: url("../images/proposal_knee_wide.jpg");
-  background-position: left;
   }
   .par_two {
     background-image: url("../images/engagement_party.JPG");
-    background-position: center;
   }
   .par_three {
     background-image: url("../images/proposal_point.JPG");
-    background-position: bottom left;
     /* background-position: bottom is more vissually pleasing as it leaves the ring in view at the bottom of the page. */
   }
   @media only screen and (min-width: 768px) {
     .parralax {
       background-attachment: fixed;
+      background-size: cover;
     }
   }
 
