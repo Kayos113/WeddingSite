@@ -12,18 +12,18 @@ h1 {
   width: 100vw;
 }
 
-.background-image {
-  position: fixed;
-  top:0;
-  right:0;
-  z-index:-1;
-  height: auto;
-  width: 84%;
+@media only screen and (min-width: 768px) {
+  .background-image {
+    position: fixed;
+    top:0;
+    right:0;
+    z-index:-1;
+    height: auto;
+    width: 84%;
+  }
 }
 
-.countdown {
 
-}
 .clock-card {
   display: inline-block;
   text-align: left;
@@ -59,7 +59,7 @@ h1 {
   box-shadow: 0 0 5px 0 var(--ch-cream);
 }
 .rsvp:active {
-  box-shadow: inset 0 0 3px var(--ch-cream)
+  box-shadow: inset 0 0 3px var(--ch-cream);
 }
 .rsvp>h6 {
   margin: 0;
