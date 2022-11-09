@@ -36,13 +36,13 @@ a {
 }
 
 h1 {
-  font-size: 5vw;
+  font-size: 10vh;
 }
 h4 {
-  font-size: 3.5vw;
+  font-size: 5vh;
 }
 h6 {
-  font-size: 3vw;
+  font-size: 4vh;
   font-weight: 400;
   margin: 0;
   }

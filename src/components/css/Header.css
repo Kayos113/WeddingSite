@@ -20,6 +20,7 @@ h1 {
 .background-image {
   width: 100vw;
   height: auto;
+  transform: scaleX(-1);
 }
 @media only screen and (min-width: 768px) {
   /* If the user is using a laptop or desktop computer... */
@@ -71,6 +72,7 @@ h1 {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  margin-right: 2rem;
 }
 .rsvp:hover {
   box-shadow: 0 0 5px 0 var(--ch-cream);
