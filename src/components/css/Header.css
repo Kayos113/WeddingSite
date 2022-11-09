@@ -25,12 +25,12 @@ h1 {
 @media only screen and (min-width: 768px) {
   /* If the user is using a laptop or desktop computer... */
   .background-image {
-    width: 80vw;
+    width: auto;
     position: fixed;
     top:0;
     right:0;
     z-index:-1;
-    height: auto;
+    height: 100vh;
     margin: 0;
   }
 }
