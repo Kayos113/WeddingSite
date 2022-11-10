@@ -15,7 +15,13 @@ function Header() {
 
         <Banner />
 
-        <Countdown />
+        <div className="counter-flex">
+          <Countdown />
+          <a className="rsvp" href="#information">
+            <h6>Info ↓</h6>
+          </a>
+        </div>
+
 
       </div>
     </div>);

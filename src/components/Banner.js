@@ -9,11 +9,9 @@ function Banner() {
       <div className="save-date">
         <div className="date">
           <h6 className="subscript">Save the Date:</h6>
-          <h6>September 16, 2023</h6>
+          <h4>September 16, 2023</h4>
         </div>
-        <a className="rsvp" href="#information">
-          <h6>Info ↓</h6>
-        </a>
+        
 
       </div>
     </div>
