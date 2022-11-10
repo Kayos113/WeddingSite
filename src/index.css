@@ -52,6 +52,12 @@ h6 {
     font-size: 1rem;
     font-family: "Kalam", cursive;
   }
+  @media only screen and (min-width: 390px) {
+    /* To keep the h1 from wrapping on smaller phones */
+    p {
+      font-size: 2.75rem;
+    }
+  }
   @media only screen and (min-width: 480px) {
     h1 {
       font-size: 3rem;
