@@ -13,8 +13,8 @@ h1 {
 }
 
 .header {
-  height: 100vh;
-  width: 100vw;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
 .background-image {
@@ -28,10 +28,20 @@ h1 {
     width: auto;
     position: fixed;
     top:0;
-    right:0;
+    right:-30%;
     z-index:-1;
     height: 100vh;
     margin: 0;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .background-image {
+    right: -15%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .background-image {
+    right: 0;
   }
 }
 
@@ -53,10 +63,15 @@ h1 {
   background: var(--ch-maroon);
   padding: 2rem 2rem 6rem 3rem;
   border-radius: 0 0 20% 0;
-  max-width: 40vw;
+  width: 40vw;
 }
 .text-card>img{
   width: 35vw;
+}
+@media screen only and (max-width:1000px) {
+  .text-card {
+    width: 85vw;
+  }
 }
 .date {
   /* max-width: 55%; */
@@ -95,11 +110,15 @@ h1 {
 @media only screen and (min-width: 1000px) and (max-width: 1405px) {
   .counter-flex {
     width: 35vw;
+    flex-direction: column;
+    padding-bottom: 4rem;
   }
 }
 @media only screen and (max-width: 1000px) {
   .counter-flex {
     width: 75vw;
+    margin: 0 auto;
+    flex-direction: column;
   }
 }
 .subscript {
