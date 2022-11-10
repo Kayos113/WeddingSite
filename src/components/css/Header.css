@@ -27,7 +27,7 @@ h1 {
   .background-image {
     width: auto;
     position: fixed;
-    top:0;
+    top:0%;
     right:-30%;
     z-index:-1;
     height: 100vh;
@@ -56,30 +56,58 @@ h1 {
     text-align: left;
   }
 }
+@media only screen and (max-width:1000px) {
+  .clock-card {
+    padding: 3rem 0;
+  }
+}
 
 .text-card {
   display: inline-block;
   text-align: center;
   background: var(--ch-maroon);
-  padding: 2rem 2rem 6rem 3rem;
+  padding: 2rem 2rem 3rem 3rem;
   border-radius: 0 0 20% 0;
   width: 40vw;
 }
 .text-card>img{
   width: 35vw;
 }
-@media screen only and (max-width:1000px) {
+@media only screen and (max-width:1000px) {
   .text-card {
-    width: 85vw;
+    width: 80vw;
+    padding: 0 0 3rem 0;
   }
+  .text-card>img {
+    width: 60vw;
+    margin-bottom: 2rem;
+  }
+}
+.ampersand {
+  font-size: 2rem;
+  font-weight: 400;
+
+}
+.subscript {
+  margin-top: 3rem;
+  font-size: 2.5vh;
+  text-align: left;
 }
 .date {
   /* max-width: 55%; */
   text-align: left;
-  margin: 0;
+  margin: 5rem 0 0 0;
 }
-.date>p {
-
+@media only screen and (max-width: 1000px) {
+  .save-date {
+    text-align: center;
+  }
+  .date, .subscript {
+    text-align: inherit;
+  }
+  .date {
+    margin-top: 1rem;
+  }
 }
 .rsvp {
   background-color: var(--ch-black);
@@ -88,6 +116,11 @@ h1 {
   padding: 1rem;
   /* margin-top: 2rem; */
   margin-right: 2rem;
+}
+@media screen and (max-width:1000px) {
+.rsvp {
+  margin-right:0;
+}
 }
 .rsvp:hover {
   box-shadow: 0 0 5px 0 var(--ch-cream);
@@ -106,23 +139,23 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 7vh 1rem;
 }
 @media only screen and (min-width: 1000px) and (max-width: 1405px) {
   .counter-flex {
     width: 35vw;
+  }
+}
+@media only screen and (max-width: 1197px) {
+  .counter-flex { /*This is to stop the countdown text from wrapping off of its lines*/
     flex-direction: column;
-    padding-bottom: 4rem;
   }
 }
 @media only screen and (max-width: 1000px) {
   .counter-flex {
     width: 75vw;
     margin: 0 auto;
-    flex-direction: column;
+    padding:0;
+    flex-direction: row;
   }
-}
-.subscript {
-  margin-top: 3rem;
-  font-size: 2vw;
-  text-align: left;
 }

@@ -11,9 +11,11 @@ function Header() {
     <div className="Header-Component">
       <div className="header">
 
+        <Banner />
+
         <img src={background} className="background-image" alt="" />
 
-        <Banner />
+
 
         <div className="counter-flex">
           <Countdown />

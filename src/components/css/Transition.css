@@ -3,3 +3,8 @@
   min-height: 25vh;
   background: var(--ch-maroon);
 }
+@media only screen and (max-width: 1000px) {
+  .maroon-to-cream {
+    min-height: 0;
+  }
+}
