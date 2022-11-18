@@ -1,0 +1,24 @@
+.tab-bar {
+  display: flex;
+  min-width: 100%;
+  min-height: 8vh;
+  padding-top: 2vh;
+  background: limegreen; /* var(--ch-maroon); */
+}
+@media only screen and (max-width: 1000px) {
+  .tab-bar {
+    min-height: 0;
+  }
+}
+
+.tab {
+  background: orange;
+  border-radius: .75rem .75rem 0 0;
+  min-width: 10%;
+  color: black;
+  margin-left: 2rem;
+}
+
+.active {
+  background-color: yellow;
+}

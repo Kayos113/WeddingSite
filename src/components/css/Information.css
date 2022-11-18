@@ -1,11 +1,15 @@
 
 
 .information {
+  background: yellow;
+  border-radius: 0.5rem 0.5rem 0 0;
   height: auto;
-  width: 100vw;
+  width: calc(100% - 4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 1.5rem 2rem;
+  padding-bottom: 0;
 }
 
 article {
@@ -14,7 +18,7 @@ article {
   display: inline-flex;
   flex-direction: column;
   max-width: 45vw;
-  min-width: 100vw;
+  min-width: 100%;
   padding-top: 2rem;
 }
 article>* {
@@ -47,7 +51,7 @@ article:last-child>*:last-child{
   }
 
   .parralax {
-    width: 100vw;
+    width: 100%;
     min-height: 60vh;
     background-size: cover;
     background-repeat: no-repeat;
