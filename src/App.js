@@ -1,16 +1,11 @@
-import Header from "./components/Header"
-import Information from "./components/Information"
-import TabBar from "./components/TabBar"
-import "./App.css";
+import Header from "./components/Header";
+import MultiTabPane from "./components/MultiTabPane";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <div className="multi-tab-pane">
-      <TabBar />
-      <Information />
-      </div>
+      <MultiTabPane />
 
     </div>
   );
