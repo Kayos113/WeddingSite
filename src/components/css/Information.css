@@ -1,8 +1,9 @@
 
 
 .information {
-  background: yellow;
+  background: var(--ch-cream);
   border-radius: 0.5rem 0.5rem 0 0;
+  color: var(--muted-cream);
   height: auto;
   width: calc(100% - 4rem);
   display: flex;
@@ -13,7 +14,7 @@
 }
 
 article {
-  background-color: var(--ch-maroon);
+  background-color: var(--muted-maroon);
   text-align: center;
   display: inline-flex;
   flex-direction: column;

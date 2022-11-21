@@ -1,5 +1,5 @@
 .multi-tab-pane {
-  background-color: cyan;
+  background-color: var(--ch-maroon);
   width: calc(100vw - 6rem);;
   padding: 1rem 3rem;
   padding-bottom: 0;

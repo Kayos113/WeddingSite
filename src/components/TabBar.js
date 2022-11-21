@@ -1,13 +1,14 @@
 import React, {useState} from "react";
 import "./css/TabBar.css";
 
-function Transition() {
+function Transition(props) {
 
 const [informationClasses, setInformationClasses] = useState("tab active");
 const [itineraryClasses, setItineraryClasses] = useState("tab");
 
   function tabClick(tabName) {
     resetTabClasses();
+    props.setActiveTab(tabName);
     switch(tabName) {
       case "intinerary":
         setItineraryClasses("tab active");

@@ -3,7 +3,11 @@
 :root {
   --ch-white: #EEEBDD;
   --ch-cream: #D8B6A4;
+  --muted-cream: #D9BA99;
+  --dark-cream: #A58071;
   --ch-maroon: #630000;
+  --muted-maroon: #B03535;
+  --bright-red: #FC0000;
   --ch-black: #000000;
 }
 
