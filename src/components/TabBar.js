@@ -9,8 +9,9 @@ const [itineraryClasses, setItineraryClasses] = useState("tab");
   function tabClick(tabName) {
     resetTabClasses();
     props.setActiveTab(tabName);
+    console.log("activeTab set to: " +tabName);
     switch(tabName) {
-      case "intinerary":
+      case "itinerary":
         setItineraryClasses("tab active");
       break;
       case "information":
@@ -34,7 +35,7 @@ const [itineraryClasses, setItineraryClasses] = useState("tab");
         <h2>Info</h2>
 
     </button>
-    <button href="#" className={itineraryClasses} onClick={() => tabClick("intinerary")}>
+    <button href="#" className={itineraryClasses} onClick={() => tabClick("itinerary")}>
 
         <h2>Itinerary</h2>
 
