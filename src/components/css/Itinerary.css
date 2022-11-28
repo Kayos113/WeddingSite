@@ -1,4 +1,24 @@
-.time-container {
+.entry-container {
+  margin: 1.5rem auto;
+  width: 45%;
+}
+
+.column-container {
   display: flex;
-  justify-content: space-around;
+  margin: 0 auto;
+  width: 75%;
+  justify-content: space-between;
+}
+.column-container>* {
+  margin: 0;
+}
+
+.caption {
+  margin: 0;
+  font-size: 0.75rem;
+}
+@media only screen and (min-width: 1024px) {
+  .caption {
+    font-size: 1.5rem;
+  }
 }

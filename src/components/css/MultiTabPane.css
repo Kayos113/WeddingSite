@@ -53,3 +53,24 @@ article:last-child>*:last-child{
     background-attachment: fixed;
   }
 }
+
+.par_one {
+  background-image: url("../images/engagement/road_glance.jpg");
+}
+.par_two {
+  background-image: url("../images/engagement/leaf_toss.jpg");
+}
+.par_three {
+  background-image: url("../images/engagement/covered-bridge-walk.jpg");
+  background-position: bottom center;
+  /* background-position: bottom is more vissually pleasing as it leaves the ring in view at the bottom of the page. */
+}
+.par_four {
+  background-image: url("../images/proposal_point.JPG");
+}
+.par_five {
+  background-image: url("../images/engagement_party.JPG");
+}
+.par_six {
+  background-image: url("../images/proposal_knee_wide.jpg");
+}
