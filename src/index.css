@@ -3,11 +3,7 @@
 :root {
   --ch-white: #EEEBDD;
   --ch-cream: #D8B6A4;
-  --muted-cream: #D9BA99;
-  --dark-cream: #A58071;
   --ch-maroon: #630000;
-  --muted-maroon: #960000; /* #B03535; */
-  --bright-red: #FC0000;
   --ch-black: #000000;
 }
 
@@ -39,14 +35,6 @@ a {
   text-decoration: inherit;
 }
 
-button {
-  cursor: pointer;
-  font-family: inherit;
-  text-decoration: inherit;
-  font-size: inherit;
-  border: 0;
-}
-
 h1 {
   font-size: 3rem;
 }
@@ -67,7 +55,7 @@ h6 {
   @media only screen and (min-width: 390px) {
     /* To keep the h1 from wrapping on smaller phones */
     p {
-      font-size: 1rem;
+      font-size: 2.75rem;
     }
   }
   @media only screen and (min-width: 480px) {
