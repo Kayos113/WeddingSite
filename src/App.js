@@ -1,13 +1,12 @@
-import Header from "./components/Header"
-import Information from "./components/Information"
-import Transition from "./components/Transition"
+import Header from "./components/Header";
+import MultiTabPane from "./components/MultiTabPane";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Transition />
-      <Information />
+      <MultiTabPane />
+
     </div>
   );
 }
