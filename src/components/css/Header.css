@@ -4,7 +4,6 @@ h1 {
 
 .Header-Component {
   min-width:100vw;
-  min-height: 100vh;
 }
 @media only screen and (min-width: 1000px) {
   .Header-Component {
@@ -13,7 +12,6 @@ h1 {
 }
 
 .header {
-  min-height: 100vh;
   min-width: 100vw;
 }
 
@@ -48,7 +46,7 @@ h1 {
 
 .clock-card {
   display: inline-block;
-  padding: 2rem 3rem 5rem 3rem;
+  padding: 5rem 3rem;
   background: var(--ch-maroon);
 }
 @media only screen and (min-width: 1000px) {
@@ -132,30 +130,4 @@ h1 {
   margin: 0;
   text-shadow: inherit;
   user-select: none;
-}
-.counter-flex{
-  width: 30vw;
-  background: var(--ch-maroon);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 7vh 1rem;
-}
-@media only screen and (min-width: 1000px) and (max-width: 1405px) {
-  .counter-flex {
-    width: 35vw;
-  }
-}
-@media only screen and (max-width: 1197px) {
-  .counter-flex { /*This is to stop the countdown text from wrapping off of its lines*/
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 1000px) {
-  .counter-flex {
-    width: 75vw;
-    margin: 0 auto;
-    padding:0;
-    flex-direction: row;
-  }
 }

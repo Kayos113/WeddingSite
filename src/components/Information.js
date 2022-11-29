@@ -15,7 +15,7 @@ function Information() {
       {// <p>S'mores may be included.</p>
     }</article>
 
-    <div class="parralax par_one"></div>
+    <div className="parralax par_one"></div>
 
     <article>
       <h1>Location</h1>
@@ -30,7 +30,7 @@ function Information() {
       <p>Other Accomodations 15-20 min drive away</p>
     </article>
 
-    <div class="parralax par_two"></div>
+    <div className="parralax par_two"></div>
 
     <article>
       <h1>Catering, RSVP, Registry & more</h1>
@@ -39,7 +39,7 @@ function Information() {
       <p>RSVP, Meal Selection and Registry incoming...</p>
     </article>
 
-    <div class="parralax par_three"></div>
+    <div className="parralax par_three"></div>
 
 
   </div>
