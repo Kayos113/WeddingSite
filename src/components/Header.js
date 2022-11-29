@@ -15,14 +15,7 @@ function Header() {
 
         <img src={background} className="background-image" alt="" />
 
-
-
-        <div className="counter-flex">
-          <Countdown />
-          <a className="rsvp" href="#information">
-            <h6>Info ↓</h6>
-          </a>
-        </div>
+        <Countdown />
 
 
       </div>
