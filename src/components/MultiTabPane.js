@@ -12,6 +12,7 @@ function MultiTabPane() {
     switch(activeTab) {
       case "itinerary":   return <Itinerary />;
       case "information": return <Information />;
+      case "interest": return <h1>Interest form to go here</h1>
       default:            return <h1>How did you get here?</h1>
     }
   }

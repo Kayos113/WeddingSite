@@ -5,15 +5,18 @@ function Transition(props) {
 
 const [informationClasses, setInformationClasses] = useState("tab active");
 const [itineraryClasses, setItineraryClasses] = useState("tab");
+const [interestFormClasses, setInterestFormClasses] = useState("tab");
 
   function tabClick(tabName) {
     resetTabClasses();
     props.setActiveTab(tabName);
-    console.log("activeTab set to: " +tabName);
     switch(tabName) {
       case "itinerary":
         setItineraryClasses("tab active");
       break;
+      case "interest":
+        setInterestFormClasses("tab active");
+        break;
       case "information":
       default:
         setInformationClasses("tab active");
@@ -25,6 +28,7 @@ const [itineraryClasses, setItineraryClasses] = useState("tab");
   function resetTabClasses() {
     setInformationClasses("tab");
     setItineraryClasses("tab");
+    setInterestFormClasses("tab");
   }
 
   return (
@@ -40,7 +44,11 @@ const [itineraryClasses, setItineraryClasses] = useState("tab");
         <h2>Itinerary</h2>
 
     </button>
+    <button href="#" className={interestFormClasses} onClick={() => tabClick("interest")}>
 
+        <h2>I'm Interested</h2>
+
+    </button>
 
     </div>
   )
