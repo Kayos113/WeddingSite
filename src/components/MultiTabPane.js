@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import Information from "./Information";
+import InterestForm from "./InterestForm"
 import Itinerary from "./Itinerary";
 import TabBar from "./TabBar";
 import "./css/MultiTabPane.css";
@@ -12,7 +13,7 @@ function MultiTabPane() {
     switch(activeTab) {
       case "itinerary":   return <Itinerary />;
       case "information": return <Information />;
-      case "interest": return <h1>Interest form to go here</h1>
+      case "interest": return <InterestForm />;
       default:            return <h1>How did you get here?</h1>
     }
   }
