@@ -1,3 +1,20 @@
 .interest-form {
   border-radius: 1rem 1rem 0 0;
+
+  font-family: "Kalam", sans-serif;
+}
+
+.radio-container {
+  margin: 1rem auto;
+  width: 35%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.single-radio {
+  justify-content: center;
+}
+
+label {
+  font-size: 1.25rem;
 }
