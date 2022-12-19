@@ -1,31 +1,20 @@
 import React from "react";
+import RadioAnswer from "./RadioAnswer";
 
 function RadioQuestion(props) {
+
   return (
     <div className="radio-question">
 
-      // <p className="headline">Will you be bringing a Plus One?</p>
-      // <p className="tagline">(Third option is for poly friends)</p>
       <p className="headline">{props.question}</p>
       {props.tagline===true?null:<p className="tagline">{props.tagline}</p>}
 
       <div className="radio-container">
 
-        {// <div className="single-radio">
-        //   <input type="radio" name="plus-one" id="no-plus" value="No Plus One"/>
-        //   <label for="no-plus">No Plus One</label>
-        // </div>
-        //
-        // <div className="single-radio">
-        //   <input type="radio" name="plus-one" id="plus-one" value="Plus One"/>
-        //   <label for="plus-one">Plus One</label>
-        // </div>
-        //
-        // <div className="single-radio">
-        //   <input type="radio" name="plus-one" id="plus-more" value="Plus More than One"/>
-        //   <label for="plus-more">Plus More than One</label>
-        // </div>
-      }
+        {props.options.map( (answer, index) => {
+          // map through array of radio options and render a RadioAnswer component for each one
+            return <RadioAnswer key={index} name={props.name} id={answer.id} value={answer.value}/>
+        })}
 
       </div> {//End of radio-container
       }
@@ -34,4 +23,4 @@ function RadioQuestion(props) {
   );
 }
 
-export default = RadioQuestion;
+export default RadioQuestion;
