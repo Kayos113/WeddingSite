@@ -13,7 +13,7 @@ function RadioQuestion(props) {
 
         {props.options.map( (answer, index) => {
           // map through array of radio options and render a RadioAnswer component for each one
-            return <RadioAnswer key={index} name={props.name} id={answer.id} value={answer.value}/>
+            return <RadioAnswer key={index} name={props.name} id={answer.id} value={answer.value} inputFunction={props.inputFunction}/>
         })}
 
       </div> {//End of radio-container

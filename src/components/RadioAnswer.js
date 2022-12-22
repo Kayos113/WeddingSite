@@ -8,7 +8,7 @@ function RadioAnswer(props) {
   // </div>
   return (
     <div className="single-radio">
-      <input type="radio" name={props.name} id={props.id} value={props.value}/>
+      <input type="radio" name={props.name} id={props.id} value={props.value} onChange={props.inputFunction}/>
       <label htmlFor={props.id}>{props.value}</label>
     </div>
   );
