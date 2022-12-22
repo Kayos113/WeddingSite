@@ -35,7 +35,7 @@ function InterestForm() {
     <div className="tab-container">
       <article className="interest-form">
         <form onSubmit={onSubmit}>
-        
+
           <h4 className="headline">I'll be there!</h4>
           <p className="tagline">(Not an RSVP)</p>
           <input type="text" name="name" placeholder="Guest Name" className="textfield" onInput={textInput}/>
@@ -52,6 +52,8 @@ function InterestForm() {
             name="plus-one"
             options={plusOneOptions}
           />
+
+          <input type="submit" />
 
         </form>
       </article>
