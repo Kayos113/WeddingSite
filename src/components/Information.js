@@ -19,7 +19,7 @@ function Information() {
 
     <article>
       <h1>Location</h1>
-      <a href={brophyLink} rel="noreferrer" target="_blank" class="image">
+      <a href={brophyLink} rel="noreferrer" target="_blank" className="image">
         <img src={brophyAerial} alt="Estates by Brophy - Aerial View" />
       </a>
       <h4>Estates By Brophy</h4>
