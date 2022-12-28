@@ -13,7 +13,9 @@ app.use(bodyParser.json());
 // HOME Route
 app.route('/')
 .get( (req, res) => {
-  res.send('Hello World!');
+  res.send('Welcome Home!');
 });
 
 app.listen(apiPort, () => console.log(`Server running on port ${apiPort}`));
+
+// https://dev.to/stlnick/how-to-deploy-a-full-stack-mern-app-with-heroku-netlify-ncb
