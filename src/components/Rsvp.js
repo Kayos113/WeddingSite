@@ -44,6 +44,7 @@ function Rsvp() {
         }]
       }
     });
+    console.log(radioAnswers);
   }
 
   function numberChange(event) {
