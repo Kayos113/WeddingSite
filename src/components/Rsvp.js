@@ -90,7 +90,8 @@ function Rsvp() {
           inputFunction={radioInput}
           />
           <RadioQuestion
-          question="I plan to stay..."
+          question="Where would you prefer to stay?"
+          tagline="On-site accomodations are limited"
           name="accomodations"
           options={accomodationsOptions}
           inputFunction={radioInput}

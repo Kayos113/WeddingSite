@@ -9,7 +9,7 @@ exports.accomodationsOptions = [
   {id:"on-site",
   value:"On Site"},
   {id:"blocked-rooms",
-  value:"At a Nearby Hotel"},
+  value:"In Hotels We Found"},
   {id:"own-way",
-  value:"Elsewhere"}
+  value:"I'll Find My Own"}
 ];
