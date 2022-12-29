@@ -1,7 +1,7 @@
 const { Response } = require("./model.js");
 let nElems = 0;
 
-// Route "/messages"
+// Route "/responses/all"
 exports.getAllResponses = function(req, res) {
   Response.find({}, (err, foundMessages) => {
       if(!err) {
@@ -31,7 +31,7 @@ exports.writeMessage = function(req, res) {
   });
 }
 
-// Route "/messages/rand"
+// Route "/responses/rand"
 exports.getRandomResposne = function(req, res) {
   getResponseCount();
   const index = Math.floor(Math.random()*nElems);
@@ -40,7 +40,7 @@ exports.getRandomResposne = function(req, res) {
   });
 }
 
-// Route "/message/:id"
+// Route "/response/:id"
 exports.getMessageById = function(req, res) {
   const id = req.params.id;
   Response.find({_id:id}, (err, foundResponse) => {
