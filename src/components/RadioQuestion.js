@@ -7,7 +7,7 @@ function RadioQuestion(props) {
     <div className="radio-question">
 
       <p className="headline">{props.question}</p>
-      {props.tagline===true?null:<p className="tagline">{props.tagline}</p>}
+      {props.tagline!==""?null:<p className="tagline">{props.tagline}</p>}
 
       <div className="radio-container">
 

@@ -1,11 +1,22 @@
 import React, {useState} from "react";
 import "./css/TabBar.css";
 
-function Transition(props) {
+function TabBar(props) {
 
 const [informationClasses, setInformationClasses] = useState("tab active");
 const [itineraryClasses, setItineraryClasses] = useState("tab");
-const [interestFormClasses, setInterestFormClasses] = useState("tab");
+// const [interestFormClasses, setInterestFormClasses] = useState("tab");
+const [rsvpClasses, setRsvpClasses] = useState("tab");
+/*
+  This could all be done with one useState for efficiency. The useState would be an array of strings with an idex refering to a specific tab,
+  0 - informationClasses
+  1 - itineraryClasses
+  2 - interestFormClasses
+  3 - rsvpClasses
+  etc.
+
+  I will not impliment this at this exact moment as it would distract me from finalizing the backend for the rsvp
+*/
 
   function tabClick(tabName) {
     resetTabClasses();
@@ -14,8 +25,11 @@ const [interestFormClasses, setInterestFormClasses] = useState("tab");
       case "itinerary":
         setItineraryClasses("tab active");
       break;
-      case "interest":
-        setInterestFormClasses("tab active");
+      // case "interest":
+      //   setInterestFormClasses("tab active");
+      //   break;
+      case "rsvp":
+        setRsvpClasses("tab active");
         break;
       case "information":
       default:
@@ -28,7 +42,8 @@ const [interestFormClasses, setInterestFormClasses] = useState("tab");
   function resetTabClasses() {
     setInformationClasses("tab");
     setItineraryClasses("tab");
-    setInterestFormClasses("tab");
+    // setInterestFormClasses("tab");
+    setRsvpClasses("tab");
   }
 
   return (
@@ -44,9 +59,16 @@ const [interestFormClasses, setInterestFormClasses] = useState("tab");
         <h2>Itinerary</h2>
 
     </button>
-    <button href="#" className={interestFormClasses} onClick={() => tabClick("interest")}>
+{
+     // <button href="#" className={interestFormClasses} onClick={() => tabClick("interest")}>
+     //
+     //     <h2>I'm Interested</h2>
+     //
+     // </button>
+}
+    <button href="#" className={rsvpClasses} onClick={() => tabClick("rsvp")}>
 
-        <h2>I'm Interested</h2>
+        <h2>RSVP</h2>
 
     </button>
 
@@ -54,4 +76,4 @@ const [interestFormClasses, setInterestFormClasses] = useState("tab");
   )
 }
 
-export default Transition;
+export default TabBar;
