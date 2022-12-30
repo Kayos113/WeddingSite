@@ -51,13 +51,13 @@ function Rsvp() {
     const { value } = event.target;
     if(value<0) {
       setGuestCount(0);
-    } else if(value>4) {
-      setGuestCount(4);
+    } else if(value>7) {
+      setGuestCount(7);
     } else {
       setGuestCount(value);
     }
   }
-  const getTextfields = () => {
+  function getTextfields() {
     let textfields = [];
     for(let i=0; i<guestCount; i++) {
       textfields.push(<input type="text" key={"guest"+i} className="textfield" name="guestName" placeholder={"Name of Guest "+(i+1)}/>)
