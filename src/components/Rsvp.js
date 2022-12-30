@@ -97,6 +97,8 @@ function Rsvp() {
           inputFunction={radioInput}
           />
 
+          <input type="submit" />
+
         </form>
 
         <img src={floral} className="floral flip" alt=""/>
