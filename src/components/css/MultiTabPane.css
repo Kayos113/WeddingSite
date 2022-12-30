@@ -53,10 +53,11 @@ article:last-child>*:last-child{
 
 .parralax {
   width: 100%;
-  min-height: 60vh;
+  min-height: 30vh;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: inherit;
 }
 @media only screen and (min-width: 768px) {
   /* If the user is on a laptop or desktop... */
