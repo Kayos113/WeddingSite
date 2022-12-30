@@ -54,7 +54,7 @@ article:last-child>*:last-child{
 .parralax {
   width: 100%;
   min-height: 60vh;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -63,6 +63,7 @@ article:last-child>*:last-child{
   .parralax {
     min-height: 80vh;
     background-attachment: fixed;
+    background-size: cover;
   }
 }
 
