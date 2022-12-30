@@ -16,6 +16,16 @@
   align-items: center;
   padding: 1.5rem 2rem 2rem 2rem;
 }
+@media only screen and (max-width: 780px) {
+  .multi-tab-pane {
+    padding: 0;
+    width: 100vw;
+  }
+  .tab-container {
+    border-radius: 0;
+    width: 100%;
+  }
+}
 
 article {
   background-color: var(--muted-maroon);
