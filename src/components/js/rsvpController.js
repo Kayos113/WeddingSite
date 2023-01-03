@@ -1,33 +1,4 @@
-exports.radioLogic = function(prevValue, newValue, name) {
-  // if(name === "attendance") {
-  //   return [{
-  //     name:prevValue[0].name,
-  //     value:newValue
-  //   },
-  //   {
-  //     name:prevValue[1].name,
-  //     value:prevValue[1].value
-  //   },
-  //   {
-  //     name:prevValue[2].name,
-  //     value:prevValue[2].value
-  //   }]
-  // }
-  // else if (name === "arrival") {
-  //   return [{
-  //     name:prevValue[0].name,
-  //     value:prevValue[0].value
-  //   },
-  //   {
-  //     name:prevValue[1].name,
-  //     value:newValue
-  //   },
-  //   {
-  //     name:prevValue[2].name,
-  //     value:prevValue[2].value
-  //   }]
-  // }
-  // Now that I am adding a third question, it will be easier to build a loop to pass through and check the name of the newValue against the name of the prevValue as the name will stay constant
+const radioLogic = function(prevValue, newValue, name) {
   let newRadioArr = [];
   prevValue.forEach( (response, index) => {
     if(prevValue[index].name === name) { // this is the radio selection that was updated
@@ -39,7 +10,7 @@ exports.radioLogic = function(prevValue, newValue, name) {
   return newRadioArr;
 };
 
-exports.textfieldLogic = function(prevValue, newValue, id) {
+const textfieldLogic = function(prevValue, newValue, id) {
   let newGuestArr = [];
   prevValue.forEach( (guest, index) => {
     if(guest.id===id) {
@@ -51,8 +22,7 @@ exports.textfieldLogic = function(prevValue, newValue, id) {
   return newGuestArr;
 }
 
-
-exports.numberChange = function(event) {
+const numberChange = function(event) {
   const { value } = event.target;
   if(value<0) {
     return 0;
@@ -62,3 +32,25 @@ exports.numberChange = function(event) {
     return value;
   }
 }
+
+const numberLogic = function(guestCount) {
+  let guestArr=[];
+  for(let i=0; i<guestCount; i++) {
+    let identifier = "guest"+i;
+    guestArr.push({id: identifier, name:""});
+  }
+  return guestArr;
+}
+
+const getTextfields = function (guestCount, onTextInput) {
+  let textfields = [];
+  if(guestCount>0){
+      for(let i=0; i<guestCount; i++) {
+      let identifier="guest"+i;
+      textfields.push(<input type="text" id={identifier} key={identifier} className="textfield" name="guestName" placeholder={"Name of Guest "+(i+1)} onChange={onTextInput}/>);
+    }
+  }
+  return textfields;
+}
+
+export {radioLogic, textfieldLogic, numberChange, numberLogic, getTextfields}
