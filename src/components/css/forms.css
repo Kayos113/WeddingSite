@@ -1,8 +1,8 @@
 
 
 input[type="submit"] {
-  background-color: var(--ch-white);
-  color: var(--ch-black);
+  background-color: var(--ch-black);
+  color: var(--ch-white);
   font-size: 2rem;
   padding: 0.5rem 1rem;;
   border: 1px solid black;
@@ -16,14 +16,13 @@ input[type="submit"] {
   transition:  0.15s linear;
 }
 input[type=submit]:hover {
-  background-color: var(--ch-black);
-  color: var(--ch-white);
-  border: 1px solid var(--ch-white);
+  background-color: var(--ch-white);
+  color: var(--ch-black);
+  border: 1px solid var(--ch-black);
 }
 input[type=submit]:active {
   scale: 98%;
-  border: 1px solid var(--muted-cream);
-  color: var(--muted-cream);
+  border: 1px solid var(--ch-white);
   box-shadow: 0px 0px 1px 2px rgba(216,182,164,0.70);
 -webkit-box-shadow: 0px 0px 1px 2px rgba(216,182,164,0.70);
 -moz-box-shadow: 0px 0px 1px 2px rgba(216,182,164,0.70);
