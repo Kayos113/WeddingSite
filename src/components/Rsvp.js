@@ -1,72 +1,52 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import RadioQuestion from "./RadioQuestion";
 import "./css/rsvp.css";
 import "./css/forms.css";
 import floral from "./images/floral-vector-cream.svg";
 
-import {arrivalOptions, accomodationsOptions} from "./data/rsvpRadioQuestions.js";
+import {radioInitState, attendanceOptions, arrivalOptions, accomodationsOptions} from "./data/rsvpRadioQuestions.js";
+import {radioLogic, numberChange, textfieldLogic} from "./js/rsvpController.js";
 
 function Rsvp() {
 
   const [guestCount, setGuestCount] = useState(0);
-  const [radioAnswers, setRadioAnswers] = useState(
-    [{
-      name:"arrival",
-      value:"not-answered"
-    },
-    {
-      name:"accomodations",
-      value:"not-answered"
+  const [radioAnswers, setRadioAnswers] = useState(radioInitState);
+  const [guestNames, setGuestNames] = useState([]);
+
+  useEffect( () => {
+    let guestArr=[];
+    for(let i=0; i<guestCount; i++) {
+      let identifier = "guest"+i;
+      guestArr.push({id: identifier, name:""});
     }
-  ]
-  );
+    setGuestNames(guestArr);
+  }, [guestCount]); // this must be done in a useEffect as changing state causes a re-render so lumping it in with the getTextfields was causing an infinite loop as re-rendering would trigger the getTextfields which would change the guestNames state whih would trigger a re-render. UseEffect will only run once everytime guestCount changes
+
   function radioInput(event) {
     const { value, name } = event.target;
-    setRadioAnswers( (prevValue) => {
-      if(name === "arrival") {
-        return [{
-          name:prevValue[0].name,
-          value:value
-        },
-        {
-          name:prevValue[1].name,
-          value:prevValue[1].value
-        }]
-      }
-      else if (name === "accomodations") {
-        return [{
-          name:prevValue[0].name,
-          value:prevValue[0].value
-        },
-        {
-          name:prevValue[1].name,
-          value:value
-        }]
-      }
-    });
+    setRadioAnswers( (prevValue) => radioLogic(prevValue, value, name) );
     console.log(radioAnswers);
-  }
+  };
 
-  function numberChange(event) {
-    const { value } = event.target;
-    if(value<0) {
-      setGuestCount(0);
-    } else if(value>7) {
-      setGuestCount(7);
-    } else {
-      setGuestCount(value);
-    }
-  }
+
   function getTextfields() {
     let textfields = [];
-    for(let i=0; i<guestCount; i++) {
-      textfields.push(<input type="text" key={"guest"+i} className="textfield" name="guestName" placeholder={"Name of Guest "+(i+1)}/>)
+    if(guestCount>0){
+        for(let i=0; i<guestCount; i++) {
+        let identifier="guest"+i;
+        textfields.push(<input type="text" id={identifier} key={identifier} className="textfield" name="guestName" placeholder={"Name of Guest "+(i+1)} onChange={onTextInput}/>);
+      }
     }
     return textfields;
+  }
+  function onTextInput(event) {
+    const { id, value } = event.target;
+    setGuestNames( (prevValue) => textfieldLogic(prevValue, value, id));
   }
 
   function onSubmit(event) {
     event.preventDefault();
+    console.log(radioAnswers + "\n" +guestNames)
   }
 
   return (
@@ -78,11 +58,17 @@ function Rsvp() {
 
         <form onSubmit={onSubmit}>
           <h4>How many Guests in your party?</h4>
-          <input type="number" id="guest-count" name="guestCount" className="numberfield" onChange={numberChange}/>
+          <input type="number" id="guest-count" name="guestCount" className="numberfield" onChange={ (event) => setGuestCount(numberChange(event))}/>
           <div className="textfields">
             {getTextfields()}
           </div>
 
+          <RadioQuestion
+          question="I will..."
+          name="attendance"
+          options={attendanceOptions}
+          inputFunction={radioInput}
+          />
           <RadioQuestion
           question="I plan to arrive on..."
           name="arrival"
