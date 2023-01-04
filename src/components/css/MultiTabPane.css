@@ -34,8 +34,7 @@ article {
   text-align: center;
   display: inline-flex;
   flex-direction: column;
-  max-width: 45vw;
-  min-width: 100%;
+  max-width: 65%;
   padding-top: 2rem;
 }
 article>* {
@@ -49,6 +48,11 @@ article>*:last-child {
 }
 article:last-child>*:last-child{
   padding-bottom: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  article {
+    max-width: 80%;
+  }
 }
 
 .parralax {
