@@ -6,7 +6,7 @@
 }
 
 .tab-container {
-  background: var(--ch-cream);
+  background: var(--muted-maroon);
   border-radius: 0.5rem 0.5rem 0 0;
   color: var(--muted-cream);
   height: auto;
@@ -15,6 +15,18 @@
   flex-direction: column;
   align-items: center;
   padding: 1.5rem 2rem 2rem 2rem;
+}
+@media only screen and (max-width: 780px) {
+  .multi-tab-pane {
+    padding: 0;
+    width: 100vw;
+  }
+  .tab-container {
+    border-radius: 0;
+    width: 100%;
+    padding: 0;
+    padding-top: 1.5rem;
+  }
 }
 
 article {
@@ -41,16 +53,18 @@ article:last-child>*:last-child{
 
 .parralax {
   width: 100%;
-  min-height: 60vh;
-  background-size: cover;
+  min-height: 50vh;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  background-color: inherit;
 }
 @media only screen and (min-width: 768px) {
   /* If the user is on a laptop or desktop... */
   .parralax {
     min-height: 80vh;
     background-attachment: fixed;
+    background-size: cover;
   }
 }
 
