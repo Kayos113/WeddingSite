@@ -1,3 +1,4 @@
+//Controller for "backend" folder
 const { RSVP } = require("./rsvpModel.js");
 let nElems = 0;
 

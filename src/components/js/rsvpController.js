@@ -1,3 +1,4 @@
+//Controller for frontend rsvp.js component
 const radioLogic = function(prevValue, newValue, name) {
   let newRadioArr = [];
   prevValue.forEach( (response, index) => {
