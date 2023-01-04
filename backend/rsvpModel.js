@@ -11,9 +11,11 @@ mongoose.connect(process.env.MONGODB_URI, {
 const rsvpSchema = {
   numOfGuests: Number,
   names: [String],
-  arrivalDate: String,
+  radioAnswers: {
+    type: Map,
+    of: String
+  },
   responseDate: Date
 };
 const RSVP = mongoose.model("RSVP", rsvpSchema);
-
 exports.RSVP = RSVP;

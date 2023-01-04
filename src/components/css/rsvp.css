@@ -56,3 +56,13 @@ input[type=number] {
   margin: 1rem;
   text-align: center;
 }
+
+.alert {
+  text-decoration: underline;
+  color: yellow;
+  font-size: 1rem;
+}
+
+.hidden {
+  display: none;
+}

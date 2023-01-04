@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import axios from "axios";
 import RadioQuestion from "./RadioQuestion";
 import "./css/rsvp.css";
 import "./css/forms.css";
@@ -12,6 +13,7 @@ function Rsvp() {
   const [guestCount, setGuestCount] = useState(0);
   const [radioAnswers, setRadioAnswers] = useState(radioInitState);
   const [guestNames, setGuestNames] = useState([]);
+  const [alertClasses, setAlertClasses] = useState("alert hidden");
 
   useEffect( () => {
     setGuestNames(numberLogic(guestCount));
@@ -28,7 +30,67 @@ function Rsvp() {
   }
   function onSubmit(event) {
     event.preventDefault();
-    console.log(radioAnswers + "\n" +guestNames)
+
+    /*
+    // TODO:
+      - Check that all the states currently possess all the neccessary info
+        If not: do not send response and prompt user to enter info
+        If so : send response to the db and thank the user for their response
+          Bonus points if it is dynamically "Looking forward to seeing you," or "Sorry you cannot make it, you will be missed," messages.
+
+        rsvpSchema:
+          numOfGuests: Number,
+          names: [String],
+          radioAnswers: Map of Strings,
+          responseDate: Date
+    */
+
+    const radioBool = validateRadioAnswers();
+    const nameBool = validateTextfields();
+    if(!radioBool || !nameBool) { // There is information missing...
+      setAlertClasses("alert");
+    } else { // we have all the information needed. Build the object to send, then send via axios
+      const radioObject = {
+        attendance: radioAnswers[0].value,
+        arrival: radioAnswers[1].value,
+        accomodations: radioAnswers[2].value
+      }
+      const responseData = {
+        numOfGuests: guestCount,
+        names: guestNames,
+        radioAnswers: radioObject,
+        responseDate: Date.now()
+      }
+      axios({
+        method: "post",
+        url: "",
+        data: responseData
+      })
+      .then( res => {
+        console.log("Response successfully sent");
+      })
+      .catch( err => {
+        console.log( err );
+      });
+    }
+  }
+  function validateRadioAnswers() {
+    let bool = true;
+    radioAnswers.forEach( answer => {
+      if(answer.value==="unanswered") {
+        bool = false;
+      }
+    });
+    return bool;
+  }
+  function validateTextfields() {
+    let bool = true;
+    guestNames.forEach( name => {
+      if(name==="") {
+        bool = false;
+      }
+    });
+    return bool;
   }
 
   return (
@@ -59,12 +121,12 @@ function Rsvp() {
           />
           <RadioQuestion
           question="Where would you prefer to stay?"
-          tagline="On-site accomodations are limited"
+          tagline="On-site accomodations will be assigned by us taking this into consideration."
           name="accomodations"
           options={accomodationsOptions}
           inputFunction={onRadioInput}
           />
-
+          <p className={alertClasses}>Please answer all questions.</p>
           <input type="submit" />
 
         </form>

@@ -17,7 +17,7 @@ exports.writeRSVP = function(req, res) {
   const newResponse = new RSVP({
     guestName: req.body.guestName,
     numOfGuests: req.body.numOfGuests,
-    arrivalDate: req.body.arrivalDate,
+    radioAnswers: req.body.radioAnswers,
     responseDate: Date.now()
   });
   newMessage.save((err) => {
