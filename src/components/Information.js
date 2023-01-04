@@ -26,17 +26,19 @@ function Information() {
       <p>Fishs Eddy, New York 13774</p>
       <br/>
       <h4>Accomodations</h4>
-      <p>Some Accomodations On-site</p>
-      <p>Other Accomodations 15-20 min drive away</p>
+      <p>Some Accomodations On-site, Other Accomodations 15-20 min drive away</p>
+      <p>We are working with our venue to assign rooms and fit as many people on-site as we can.</p>
+      <p>If you will not be on-site we are contacting local hotels to set up blocks of rooms for you too book.</p>
+      <p>We will let you know the situation as soon as we can. Questions and Concerns feel free to reach out.</p>
     </article>
 
     <div className="parralax par_two"></div>
 
     <article>
       <h1>Catering, RSVP, Registry & more</h1>
-      <p>The evening of the wedding will be catered as we host the reception. All other food for the weekend will not be supplied.</p>
+      <p>The evening of the wedding will be catered as we host the reception. We will also be hosting a brunch the morning after as a farewell. All other meals may not be provided.</p>
       <br/>
-      <p>RSVP, Meal Selection and Registry incoming...</p>
+      <p>RSVP, and Registry incoming...</p>
     </article>
 
     <div className="parralax par_three"></div>

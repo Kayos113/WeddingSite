@@ -6,7 +6,7 @@
 }
 
 .tab-container {
-  background: var(--muted-maroon);
+  background: var(--ch-cream);
   border-radius: 0.5rem 0.5rem 0 0;
   color: var(--muted-cream);
   height: auto;
@@ -34,14 +34,15 @@ article {
   text-align: center;
   display: inline-flex;
   flex-direction: column;
-  max-width: 65%;
+  min-width: 100%;
   padding-top: 2rem;
 }
 article>* {
   margin: 0 2vw;
 }
 article>p {
-  margin-top: 1rem;
+  margin: 1rem auto 0;
+  max-width: 66%;
 }
 article>*:last-child {
   padding-bottom: 3rem;
@@ -50,8 +51,8 @@ article:last-child>*:last-child{
   padding-bottom: 1.5rem;
 }
 @media only screen and (max-width: 768px) {
-  article {
-    max-width: 80%;
+  article>p {
+    max-width: 90%;
   }
 }
 
