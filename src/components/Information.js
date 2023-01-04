@@ -26,8 +26,9 @@ function Information() {
       <p>Fishs Eddy, New York 13774</p>
       <br/>
       <h4>Accomodations</h4>
-      <p>Some Accomodations On-site</p>
-      <p>Other Accomodations 15-20 min drive away</p>
+      <p>Accomodations On-site, other Accomodations 15-20 min drive away</p>
+      <p>For on-site accomodations we are working with the venue to assign everyone spaces where we can fit as many people comfortably on-site with us as possible.</p>
+      <p>If you won't be on-site we will be contacting local hotels to set aside blocks of rooms to book. If you have questions or concerns, feel free to contact either one of us.</p>
     </article>
 
     <div className="parralax par_two"></div>
