@@ -26,3 +26,12 @@ a.image {
     -webkit-transform: scale(1.075);
     -ms-transform: scale(1.075);
     transform: scale(1.075); }
+
+article {
+  max-width: 66%;
+}
+@media only screen and (max-width: 800px) {
+  article {
+    max-width: 80%;
+  }
+}
