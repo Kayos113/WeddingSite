@@ -6,7 +6,7 @@
 }
 
 .tab-container {
-  background: var(--ch-cream);
+  background: var(--muted-maroon);
   border-radius: 0.5rem 0.5rem 0 0;
   color: var(--muted-cream);
   height: auto;
