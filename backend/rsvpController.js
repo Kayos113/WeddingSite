@@ -20,7 +20,6 @@ exports.writeRSVP = function(req, res) {
     radioAnswers: {}, // req.body.radioAnswers will be set below
     responseDate: Date.now()
   });
-  console.log(req.body.names);
   req.body.radioAnswers.forEach( radioAnswer => {
     newResponse.radioAnswers.set(radioAnswer.name, radioAnswer.value);
   });

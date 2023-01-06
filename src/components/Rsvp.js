@@ -22,7 +22,6 @@ function Rsvp() {
   function onRadioInput(event) {
     const { value, name } = event.target;
     setRadioAnswers( (prevValue) => radioLogic(prevValue, value, name) );
-    console.log(radioAnswers);
   };
   function onTextInput(event) {
     const { id, value } = event.target;
@@ -50,20 +49,15 @@ function Rsvp() {
     if(!radioBool || !nameBool) { // There is information missing...
       setAlertClasses("alert");
     } else { // we have all the information needed. Build the object to send, then send via axios
-      const radioObject = {
-        attendance: radioAnswers[0].value,
-        arrival: radioAnswers[1].value,
-        accomodations: radioAnswers[2].value
-      }
       const responseData = {
         numOfGuests: guestCount,
         names: guestNames,
-        radioAnswers: radioObject,
+        radioAnswers: radioAnswers,
         responseDate: Date.now()
       }
       axios({
         method: "post",
-        url: "",
+        url: "https://hunterknappwedding.herokuapp.com/rsvp", // <-- PUT THE URL HERE AND IT WILL BE DONE
         data: responseData
       })
       .then( res => {
