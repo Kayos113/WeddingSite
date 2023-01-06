@@ -19,6 +19,7 @@ exports.writeRSVP = function(req, res) {
   req.body.names.forEach( nameObject => {
     nameArr.push(nameObject.name);
   });
+  console.log(nameArr);
   const newResponse = new RSVP({
     guestName: nameArr,
     numOfGuests: req.body.numOfGuests,
