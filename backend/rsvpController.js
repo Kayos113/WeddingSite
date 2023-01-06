@@ -21,7 +21,7 @@ exports.writeRSVP = function(req, res) {
   });
   console.log(nameArr);
   const newResponse = new RSVP({
-    guestName: nameArr,
+    names: nameArr,
     numOfGuests: req.body.numOfGuests,
     radioAnswers: {}, // req.body.radioAnswers will be set below
     responseDate: Date.now()
