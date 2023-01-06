@@ -15,14 +15,13 @@ exports.getAllRSVPs = function(req, res) {
 
 exports.writeRSVP = function(req, res) {
   const newResponse = new RSVP({
-    guestName: req.body.guestName,
+    guestName: req.body.names,
     numOfGuests: req.body.numOfGuests,
     radioAnswers: {}, // req.body.radioAnswers will be set below
     responseDate: Date.now()
   });
-  console.log(req.body.radioAnswers);
-  const radioArr = req.body.radioAnswers;
-  radioArr.forEach( radioAnswer => {
+  console.log(req.body.names);
+  req.body.radioAnswers.forEach( radioAnswer => {
     newResponse.radioAnswers.set(radioAnswer.name, radioAnswer.value);
   });
   newResponse.save((err) => {
