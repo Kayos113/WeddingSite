@@ -14,15 +14,16 @@ exports.getAllRSVPs = function(req, res) {
 }
 
 exports.writeRSVP = function(req, res) {
+  //extract names from the name objects they were stored as in the react app
+  let nameArr = [];
+  req.body.names.forEach( nameObject => {
+    nameArr.push(nameObject.name);
+  });
   const newResponse = new RSVP({
-    guestName: [],
+    guestName: nameArr,
     numOfGuests: req.body.numOfGuests,
     radioAnswers: {}, // req.body.radioAnswers will be set below
     responseDate: Date.now()
-  });
-  //extract names from the name objects they were stored as in the react app
-  req.body.names.forEach( nameObject => {
-    newResponse.guestName.push(nameObject.name);
   });
   req.body.radioAnswers.forEach( radioAnswer => {
     newResponse.radioAnswers.set(radioAnswer.name, radioAnswer.value);
