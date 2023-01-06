@@ -10,7 +10,7 @@ mongoose.connect(process.env.MONGODB_URI, {
 
 const rsvpSchema = {
   numOfGuests: Number,
-  names: [String],
+  names: [],
   radioAnswers: {
     type: Map,
     of: String
