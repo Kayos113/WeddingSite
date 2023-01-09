@@ -14,6 +14,8 @@ function Rsvp() {
   const [radioAnswers, setRadioAnswers] = useState(radioInitState);
   const [guestNames, setGuestNames] = useState([]);
   const [alertClasses, setAlertClasses] = useState("alert hidden");
+  const [buttonClasses, setButtonClasses] = useState("");
+  const [responseClasses, setResponseClasses] = useState("hidden");
 
   useEffect( () => {
     setGuestNames(numberLogic(guestCount));
@@ -62,6 +64,8 @@ function Rsvp() {
       })
       .then( res => {
         console.log("Response successfully sent");
+        setButtonClasses("hidden");
+        setResponseClasses("");
       })
       .catch( err => {
         console.log( err );
@@ -121,8 +125,8 @@ function Rsvp() {
           inputFunction={onRadioInput}
           />
           <p className={alertClasses}>Please answer all questions.</p>
-          <input type="submit" />
-
+          <input type="submit" className={buttonClasses}/>
+          <p className={responseClasses}>Thank You for Responding!</p>
         </form>
 
         <img src={floral} className="floral flip" alt=""/>
