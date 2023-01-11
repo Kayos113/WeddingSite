@@ -23,12 +23,10 @@ exports.writeRSVP = function(req, res) {
   const newResponse = new RSVP({
     names: nameArr,
     numOfGuests: req.body.numOfGuests,
-    radioAnswers: {}, // req.body.radioAnswers will be set below
+    radioAnswers: req.body.radioAnswers,
     responseDate: Date.now()
   });
-  req.body.radioAnswers.forEach( radioAnswer => {
-    newResponse.radioAnswers.set(radioAnswer.name, radioAnswer.value);
-  });
+
   newResponse.save((err) => {
     if(!err) {
       console.log("Response submitted.");
