@@ -1,0 +1,18 @@
+
+
+strong {
+  position: relative;
+  font-size: 1.35rem;
+  bottom: 10px;
+}
+
+.faq-entry {
+  max-width: 50%;
+  text-align: left;
+  padding: 1rem 2rem;
+  margin: 1rem auto 2rem;
+  border-style: solid;
+  border-width: 10px;
+  border-image: radial-gradient(var(--muted-cream) 50%, var(--muted-maroon));
+  border-image-slice: 1;
+}

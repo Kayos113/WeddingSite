@@ -7,6 +7,7 @@ const [informationClasses, setInformationClasses] = useState("tab active");
 const [itineraryClasses, setItineraryClasses] = useState("tab");
 // const [interestFormClasses, setInterestFormClasses] = useState("tab");
 const [rsvpClasses, setRsvpClasses] = useState("tab");
+const [faqClasses, setFaqClasses] = useState("tab");
 /*
   This could all be done with one useState for efficiency. The useState would be an array of strings with an idex refering to a specific tab,
   0 - informationClasses
@@ -31,6 +32,9 @@ const [rsvpClasses, setRsvpClasses] = useState("tab");
       case "rsvp":
         setRsvpClasses("tab active");
         break;
+      case "faq":
+        setFaqClasses("tab active");
+        break;
       case "information":
       default:
         setInformationClasses("tab active");
@@ -43,6 +47,7 @@ const [rsvpClasses, setRsvpClasses] = useState("tab");
     setInformationClasses("tab");
     setItineraryClasses("tab");
     // setInterestFormClasses("tab");
+    setFaqClasses("tab");
     setRsvpClasses("tab");
   }
 
@@ -69,6 +74,12 @@ const [rsvpClasses, setRsvpClasses] = useState("tab");
     <button href="#" className={rsvpClasses} onClick={() => tabClick("rsvp")}>
 
         <h2>RSVP</h2>
+
+    </button>
+
+    <button href='#' className={faqClasses} onClick={() => tabClick("faq")}>
+
+        <h2>FAQ</h2>
 
     </button>
 
