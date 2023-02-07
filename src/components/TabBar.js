@@ -6,7 +6,7 @@ function TabBar(props) {
 const [informationClasses, setInformationClasses] = useState("tab active");
 const [itineraryClasses, setItineraryClasses] = useState("tab");
 // const [interestFormClasses, setInterestFormClasses] = useState("tab");
-const [rsvpClasses, setRsvpClasses] = useState("tab");
+// const [rsvpClasses, setRsvpClasses] = useState("tab");
 const [faqClasses, setFaqClasses] = useState("tab");
 /*
   This could all be done with one useState for efficiency. The useState would be an array of strings with an idex refering to a specific tab,
@@ -29,9 +29,9 @@ const [faqClasses, setFaqClasses] = useState("tab");
       // case "interest":
       //   setInterestFormClasses("tab active");
       //   break;
-      case "rsvp":
-        setRsvpClasses("tab active");
-        break;
+      // case "rsvp":
+      //   setRsvpClasses("tab active");
+      //   break;
       case "faq":
         setFaqClasses("tab active");
         break;
@@ -48,7 +48,7 @@ const [faqClasses, setFaqClasses] = useState("tab");
     setItineraryClasses("tab");
     // setInterestFormClasses("tab");
     setFaqClasses("tab");
-    setRsvpClasses("tab");
+    // setRsvpClasses("tab");
   }
 
   return (
@@ -71,11 +71,13 @@ const [faqClasses, setFaqClasses] = useState("tab");
      //
      // </button>
 }
-    <button href="#" className={rsvpClasses} onClick={() => tabClick("rsvp")}>
-
-        <h2>RSVP</h2>
-
-    </button>
+{
+    // <button href="#" className={rsvpClasses} onClick={() => tabClick("rsvp")}>
+    //
+    //     <h2>RSVP</h2>
+    //
+    // </button>
+}
 
     <button href='#' className={faqClasses} onClick={() => tabClick("faq")}>
 
