@@ -36,7 +36,7 @@ exports.faqAccomodations = [
   },
   {
     question:"When should I book my accomodations?",
-    answer:"If you know you are unable to stay for the full weekend or prefer to secure your own lodgings, you can book as soon as you like. Please refer to our list of local hotels and Airbnbs here./nWe will be booking the rooms for those staying on-site./nOtherwise, please wait until the invites are sent out and the RSVP form is up. This should be around mid-April."
+    answer:"If you know you are unable to stay for the full weekend or prefer to secure your own lodgings, you can book as soon as you like. Please refer to our list of local hotels and Airbnbs here.\nWe will be booking the rooms for those staying on-site.\nOtherwise, please wait until the invites are sent out and the RSVP form is up. This should be around mid-April."
   },
   {
     question:"How can I get to Fishs Eddy, NY?",
