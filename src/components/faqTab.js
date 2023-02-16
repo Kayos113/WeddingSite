@@ -1,13 +1,13 @@
 import React from "react";
 import FAQEntry from "./faq";
-import { faqArr } from "./data/faqData.js";
+import { faqBasics, faqAccomodations, faqETC } from "./data/faqData.js";
 import "./css/faq.css";
 
 function faqTab() {
 
-  function faqElems() {
+  function faqElems(arr) {
     let entries = [];
-    faqArr.forEach( (entry, index) => {
+    arr.forEach( (entry, index) => {
       entries.push(<FAQEntry question={entry.question} answer={entry.answer} key={"entry"+index} />)
     });
     return entries;
@@ -17,7 +17,17 @@ function faqTab() {
       <article>
         <h1>FAQ</h1>
 
-        {faqElems()}
+        <h1 className="faq-section-title">General Questions</h1>
+
+        {faqElems(faqBasics)}
+
+        <h1 className="faq-section-title">Accomodations</h1>
+
+        {faqElems(faqAccomodations)}
+
+        <h1 className="faq-section-title">Oddly Specific</h1>
+
+        {faqElems(faqETC)}
         {
         //   <FAQEntry
         //   question="Should we book our own rooms at your venue?"

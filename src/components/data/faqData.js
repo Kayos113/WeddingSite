@@ -1,4 +1,4 @@
-exports.faqArr = [
+exports.faqBasics = [
   {
     question:"How Do I RSVP?",
     answer:"The RSVP section isn’t live yet but once it is, please RSVP online here by June 1st."
@@ -26,7 +26,10 @@ exports.faqArr = [
   {
     question:"Is there an open bar?",
     answer:"Yes!"
-  },
+  }
+]
+
+exports.faqAccomodations = [
   {
     question:"Will I be staying on-site at Estates By Brophy?",
     answer:"Space at the Estates is limited. The Riverview Estate houses 32 people while the Deer Ridge Estate sleeps 40. Because of this, priority will be given to 1. The wedding party & family and 2. People who plan on staying the full weekend (Sept 15-Sept 17).\nThose not staying on-site will be able to stay in a local hotel or Airbnb. We have hotel blocks at some nearby resorts, or you’re welcome to find your own accommodations."
@@ -38,7 +41,10 @@ exports.faqArr = [
   {
     question:"How can I get to Fishs Eddy, NY?",
     answer:"Fishs Eddy, NY is approximately 2.5 hours outside of NYC. There is on-site parking for those who choose to drive. If you are local to NY but driving or renting a car isn’t an option for you, there are train and bus options through Amtrak, VIA Rail, Metro-North Railroad and Trailways. For those coming from out of state, Albany is the closest airport but there are other options that provide buses directly to the area."
-  },
+  }
+]
+
+exports.faqETC = [
   {
     question:"How do I sign up to perform in the welcome night cabaret?",
     answer:"Everyone is welcome to perform in the cabaret but obviously, no one is required to! If you have a song to sing; a monologue, poem or stand-up set to say or any other unique talent to showcase, you can sign up during check-in hours at Riverview Estate by Brophy. The cabaret will take place on Friday, Sept 15 at 7pm."
