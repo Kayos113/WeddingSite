@@ -1,0 +1,31 @@
+
+
+strong {
+  position: relative;
+  font-size: 1.35rem;
+  bottom: 10px;
+}
+
+.faq-entry {
+  max-width: 50%;
+  text-align: left;
+  padding: 1rem 2rem;
+  margin: 1rem auto 2rem;
+  border-style: solid;
+  border-width: 10px;
+  border-image: radial-gradient(var(--muted-cream) 50%, var(--muted-maroon) 90%);
+  border-image-slice: 1;
+}
+
+.faq-section-title {
+  font-size: 3rem;
+  margin: 3rem 0;
+  padding-top: 2rem;
+  border-top: 10px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-style: solid;
+  border-image: radial-gradient(var(--muted-cream) 50%, var(--muted-maroon) 90%);
+  border-image-slice: 1;
+}

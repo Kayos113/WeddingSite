@@ -1,0 +1,39 @@
+.interest-form {
+  border-radius: 1rem 1rem 0 0;
+
+
+}
+
+.headline {
+  margin: 0;
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+}
+.tagline {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.radio-container {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-around;
+}
+.radio-question {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  /* width: 55%; */
+  border-radius: 0.5rem;
+}
+@media only screen and (max-width: 800px) {
+  .radio-container {
+    flex-direction: column;
+  }
+}
+
+.single-radio {
+  justify-content: center;
+  margin: 0 1rem 1rem;
+}

@@ -85,11 +85,12 @@ article:last-child>*:last-child{
   /* background-position: bottom is more vissually pleasing as it leaves the ring in view at the bottom of the page. */
 }
 .par_four {
-  background-image: url("../images/proposal_point.JPG");
+  background-image: url("../images/engagement_party.JPG");
 }
 .par_five {
-  background-image: url("../images/engagement_party.JPG");
+  background-image: url("../images/engagement/ring_macro.jpg");
 }
 .par_six {
   background-image: url("../images/proposal_knee_wide.jpg");
+  background-position: top;
 }
