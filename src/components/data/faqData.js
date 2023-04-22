@@ -13,7 +13,7 @@ exports.faqBasics = [
   },
   {
     question:"What is the dress code for the wedding?",
-    answer:"For the ceremony and reception, we ask that you dress in formal, black-tie optional attire. We will be outside for the ceremony and cocktail hour, indoors for the reception and back out for the bonfire. Feel to dress how you like for the rest of the weekend. There will be hot tubs and a heated pool so pack a swimsuit!"
+    answer:"For the ceremony and reception, we ask that you dress in formal. We will be outside for the ceremony and cocktail hour, indoors for the reception and back out for the bonfire. Feel to dress how you like for the rest of the weekend. There will be hot tubs and a heated pool so pack a swimsuit!"
   },
   {
     question:"Will I need to pre-select my reception dinner meal?",
