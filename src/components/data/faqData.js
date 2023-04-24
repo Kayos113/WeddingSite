@@ -1,8 +1,8 @@
 exports.faqBasics = [
-  {
-    question:"How Do I RSVP?",
-    answer:"The RSVP section isn’t live yet but once it is, please RSVP online here by June 1st."
-  },
+  // {
+  //   question:"How Do I RSVP?",
+  //   answer:"The RSVP section isn’t live yet but once it is, please RSVP online here by June 1st."
+  // },
   {
     question:"Can I bring a plus one?",
     answer:"Unless their name is on the invitation, please reach out to us. Since on-site accommodations are limited, you likely will be responsible for finding nearby accommodations for both you and your +1."
@@ -13,7 +13,7 @@ exports.faqBasics = [
   },
   {
     question:"What is the dress code for the wedding?",
-    answer:"For the ceremony and reception, we ask that you dress in formal. We will be outside for the ceremony and cocktail hour, indoors for the reception and back out for the bonfire. Feel to dress how you like for the rest of the weekend. There will be hot tubs and a heated pool so pack a swimsuit!"
+    answer:"For the ceremony and reception, we ask that you dress in formal attire. We will be outside for the ceremony and cocktail hour, indoors for the reception and back out for the bonfire. Feel to dress how you like for the rest of the weekend. There will be hot tubs and a heated pool so pack a swimsuit!"
   },
   {
     question:"Will I need to pre-select my reception dinner meal?",
@@ -36,7 +36,7 @@ exports.faqAccomodations = [
   },
   {
     question:"When should I book my accomodations?",
-    answer:"If you know you are unable to stay for the full weekend or prefer to secure your own lodgings, you can book as soon as you like. Please refer to our list of local hotels and Airbnbs here.\nWe will be booking the rooms for those staying on-site.\nOtherwise, please wait until the invites are sent out and the RSVP form is up. This should be around mid-April."
+    answer:"If you know you are unable to stay for the full weekend or prefer to secure your own lodgings, you can book as soon as you like. Please refer to our list of local hotels and Airbnbs here.\nWe will be booking the rooms for those staying on-site.\nOtherwise, please RSVP as soon as you can and we will assign rooms and discuss pricing for on-site rooms accordingly."
   },
   {
     question:"How can I get to Fishs Eddy, NY?",

@@ -31,7 +31,7 @@ function faqTab() {
         {
         //   <FAQEntry
         //   question="Should we book our own rooms at your venue?"
-        //   answer="No. Our venue does have limited space for accomodations which is going to be coordinated by us and the venue to fit as many quests as possible with a preference given to family, and the wedding party. There are also be nearby hotels with blocks of rooms to reserve coordinated by the wedding, or numerous nice AirBnB, Vrbo and other lodgings if you are inclined to find your own."
+        //   answer="No. Our venue does have limited space for accomodations which is going to be coordinated by us and the venue to fit as many guests as possible with a preference given to family, and the wedding party. There are also be nearby hotels with blocks of rooms to reserve coordinated by the wedding, or numerous nice AirBnB, Vrbo and other lodgings if you are inclined to find your own."
         // />
         //
         // <FAQEntry

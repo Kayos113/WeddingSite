@@ -6,6 +6,7 @@ function TabBar(props) {
 const [informationClasses, setInformationClasses] = useState("tab active");
 const [itineraryClasses, setItineraryClasses] = useState("tab");
 // const [interestFormClasses, setInterestFormClasses] = useState("tab");
+const [accomodationsClasses, setAccomodationsClasses] = useState("tab");
 const [rsvpClasses, setRsvpClasses] = useState("tab");
 const [faqClasses, setFaqClasses] = useState("tab");
 /*
@@ -29,6 +30,9 @@ const [faqClasses, setFaqClasses] = useState("tab");
       // case "interest":
       //   setInterestFormClasses("tab active");
       //   break;
+      case "accomodations":
+        setAccomodationsClasses("tab active");
+        break;
       case "rsvp":
         setRsvpClasses("tab active");
         break;
@@ -48,6 +52,7 @@ const [faqClasses, setFaqClasses] = useState("tab");
     setItineraryClasses("tab");
     // setInterestFormClasses("tab");
     setFaqClasses("tab");
+    setAccomodationsClasses("tab");
     setRsvpClasses("tab");
   }
 
@@ -74,6 +79,12 @@ const [faqClasses, setFaqClasses] = useState("tab");
     <button href="#" className={rsvpClasses} onClick={() => tabClick("rsvp")}>
 
         <h2>RSVP</h2>
+
+    </button>
+
+    <button href="#" className={accomodationsClasses} onClick={() => tabClick("accomodations")}>
+
+      <h2>Hotels</h2>
 
     </button>
 

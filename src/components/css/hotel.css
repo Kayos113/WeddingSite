@@ -1,0 +1,18 @@
+.hotel-entry {
+  max-width: 50%;
+  text-align: left;
+  padding: 1rem 2rem;
+  margin: 1rem auto 2rem;
+  border-style: solid;
+  border-width: 10px;
+  border-image: radial-gradient(var(--muted-cream) 50%, var(--muted-maroon) 90%);
+  border-image-slice: 1;
+}
+
+.hotel-name {
+  font-size: 3rem;
+}
+
+.info {
+  font-size: 1rem;
+}
