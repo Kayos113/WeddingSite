@@ -1,6 +1,5 @@
 .hotel-entry {
   max-width: 50%;
-  text-align: left;
   padding: 1rem 2rem;
   margin: 1rem auto 2rem;
   border-style: solid;
@@ -10,9 +9,10 @@
 }
 
 .hotel-name {
+  font-family: "Dancing Script", cursive;
   font-size: 3rem;
 }
 
 .info {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }

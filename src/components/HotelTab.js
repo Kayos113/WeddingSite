@@ -38,6 +38,10 @@ function HotelTab() {
       <article>
         <h1>Accomodation Recommendation</h1>
         {hotelElems(hotelData)}
+        <div className="hotel-entry">
+          <p className="hotel-name link">Local AirBNBs</p>
+          <p className="info">There are also some lovely airBNB and rentable options such as Buckbrook Farms, the Callicoon Hotel, and others. Don't be afraid to explore our state a little.</p>
+        </div>
       </article>
     </div>
   )
