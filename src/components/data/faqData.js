@@ -5,7 +5,7 @@ exports.faqBasics = [
   // },
   {
     question:"Can I bring a plus one?",
-    answer:"Unless their name is on the invitation, please reach out to us. Since on-site accommodations are limited, you likely will be responsible for finding nearby accommodations for both you and your +1."
+    answer:"If you have a significant other and family that we know of, of course they are invited. Unfortunately there was a mix up with the invite labels, but that is being rectified."
   },
   {
     question:"Are kids allowed?",
