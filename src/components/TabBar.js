@@ -8,10 +8,11 @@ const [itineraryClasses, setItineraryClasses] = useState("tab");
 // const [interestFormClasses, setInterestFormClasses] = useState("tab");
 const [accomodationsClasses, setAccomodationsClasses] = useState("tab");
 const [rsvpClasses, setRsvpClasses] = useState("tab");
-const [registryClasses, setRegistryClasses] = useState("tab");
 const [faqClasses, setFaqClasses] = useState("tab");
+const stationaryClasses = "tab";
 
 const registryURL = "https://www.amazon.com/wedding/natalie-hunter-will-knapp--september-2023/registry/3DUZUADVLKGWR";
+const honeymoonURL = "https://www.zola.com/registry/collection-item/64998432ca9c8c0316e785ca";
 /*
   This could all be done with one useState for efficiency. The useState would be an array of strings with an idex refering to a specific tab,
   0 - informationClasses
@@ -57,7 +58,6 @@ const registryURL = "https://www.amazon.com/wedding/natalie-hunter-will-knapp--s
     setFaqClasses("tab");
     setAccomodationsClasses("tab");
     setRsvpClasses("tab");
-    setRegistryClasses("tab");
   }
 
   return (
@@ -86,9 +86,15 @@ const registryURL = "https://www.amazon.com/wedding/natalie-hunter-will-knapp--s
 
     </button>
 
-    <a href={registryURL} className={registryClasses} rel="noreferrer" target="_blank" >
+    <a href={registryURL} className={stationaryClasses} rel="noreferrer" target="_blank" >
 
       <h2>Registry</h2>
+
+    </a>
+
+    <a href={honeymoonURL} className={stationaryClasses} rel="noreferrer" target="_blank" >
+
+      <h2>Honeymoon Fund</h2>
 
     </a>
 
