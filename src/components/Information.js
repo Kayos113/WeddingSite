@@ -26,10 +26,10 @@ function Information() {
       <p>Fishs Eddy, New York 13774</p>
       <br/>
       <h4>Accomodations</h4>
-      <p>Some Accomodations On-site, Other Accomodations 15-20 min drive away</p>
-      <p>We are working with our venue to assign rooms and fit as many people on-site as we can.</p>
-      <p>If you will not be on-site we are contacting local hotels to set up blocks of rooms for you too book.</p>
-      <p>We will let you know the situation as soon as we can. Questions and Concerns feel free to reach out.</p>
+      <p>On-site Accomodations are now full, Other Accomodations 15-20 min drive away</p>
+      <p>We are looking forward to seeing everyone, and staying with those of you who are on-site.</p>
+      <p>For those not on-site, we have communicated with local hotels to set up blocks of rooms for you too book.</p>
+      <p>If you have any questions or concerns feel free to reach out.</p>
     </article>
 
     <div className="parralax par_two"></div>
