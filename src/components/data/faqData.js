@@ -9,11 +9,11 @@ exports.faqBasics = [
   },
   {
     question:"Are kids allowed?",
-    answer:"Aside from specifically-invited family members, we ask that kids stay at home."
+    answer:"Aside from specifically-invited family members and wedding party members, we ask that kids stay at home."
   },
   {
     question:"What is the dress code for the wedding?",
-    answer:"For the ceremony and reception, we ask that you dress in formal attire. We will be outside for the ceremony and cocktail hour, indoors for the reception and back out for the bonfire. Feel to dress how you like for the rest of the weekend. There will be hot tubs and a heated pool so pack a swimsuit!"
+    answer:"For the ceremony and reception, we ask that you dress in formal attire. We will be outside for the ceremony and cocktail hour, indoors for the reception and back out for the bonfire. Feel free to dress how you like for the rest of the weekend. There will be hot tubs and a heated pool so pack a swimsuit!"
   },
   {
     question:"Will I need to pre-select my reception dinner meal?",
@@ -32,7 +32,7 @@ exports.faqBasics = [
 exports.faqAccomodations = [
   {
     question:"Will I be staying on-site at Estates By Brophy?",
-    answer:"Space at the Estates is limited. The Riverview Estate houses 32 people while the Deer Ridge Estate sleeps 40. Because of this, priority will be given to 1. The wedding party & family and 2. People who plan on staying the full weekend (Sept 15-Sept 17).\nThose not staying on-site will be able to stay in a local hotel or Airbnb. We have hotel blocks at some nearby resorts, or you’re welcome to find your own accommodations."
+    answer:"Unfortunately for anyone still needing to rsvp, the on-site accomodations are fully booked, though we do have a list of nearby hotels that we have spoken to and are very welcoming to our guests, whether they put aside a block of rooms or not."
   },
   {
     question:"When should I book my accomodations?",
@@ -55,7 +55,7 @@ exports.faqETC = [
   },
   {
     question:"Will there be alpacas at the wedding?",
-    answer:"Duh."
+    answer:"Duh. They're actually in the wedding party."
   },
   {
     question:"Congratulations!",

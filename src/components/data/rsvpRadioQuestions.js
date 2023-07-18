@@ -28,10 +28,10 @@ exports.arrivalOptions = [
 ];
 
 exports.accomodationsOptions = [
-  {id:"on-site",
-  value:"On Site"},
+  // {id:"on-site",
+  // value:"On Site"},
   {id:"blocked-rooms",
   value:"In Hotels We Found"},
   {id:"own-way",
-  value:"I'll Find My Own"}
+  value:"I'll Find My Own (AirBNB, VRBO, etc.)"}
 ];
