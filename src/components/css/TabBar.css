@@ -19,6 +19,10 @@
   margin-left: 2rem;
 }
 
+.wide-tab {
+  min-width: 12%;
+}
+
 .active {
   background-color: var(--ch-cream);
 }

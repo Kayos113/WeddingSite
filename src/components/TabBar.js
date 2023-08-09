@@ -11,7 +11,7 @@ const [rsvpClasses, setRsvpClasses] = useState("tab");
 const [faqClasses, setFaqClasses] = useState("tab");
 const stationaryClasses = "tab";
 
-const registryURL = "https://www.amazon.com/wedding/natalie-hunter-will-knapp--september-2023/registry/3DUZUADVLKGWR";
+// const registryURL = "https://www.amazon.com/wedding/natalie-hunter-will-knapp--september-2023/registry/3DUZUADVLKGWR";
 const honeymoonURL = "https://www.zola.com/registry/collection-item/64998432ca9c8c0316e785ca";
 /*
   This could all be done with one useState for efficiency. The useState would be an array of strings with an idex refering to a specific tab,
@@ -86,13 +86,15 @@ const honeymoonURL = "https://www.zola.com/registry/collection-item/64998432ca9c
 
     </button>
 
-    <a href={registryURL} className={stationaryClasses} rel="noreferrer" target="_blank" >
+{
+    // <a href={registryURL} className={stationaryClasses} rel="noreferrer" target="_blank" >
+    //
+    //   <h2>Registry</h2>
+    //
+    // </a>
+}
 
-      <h2>Registry</h2>
-
-    </a>
-
-    <a href={honeymoonURL} className={stationaryClasses} rel="noreferrer" target="_blank" >
+    <a href={honeymoonURL} className={stationaryClasses + " wide-tab"} rel="noreferrer" target="_blank" >
 
       <h2>Honeymoon Fund</h2>
 
