@@ -6,6 +6,7 @@ function Countdown() {
 
   const calculateTimeLeft = () => {
     let difference = weddingDate - +new Date();
+    console.log(difference);
 
     let timeLeft = {};
 
@@ -15,6 +16,14 @@ function Countdown() {
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60)
+      };
+    }
+    else if (difference < 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)) * -1,
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24) * -1,
+        minutes: Math.floor((difference / 1000 / 60) % 60) * -1,
+        seconds: Math.floor((difference / 1000) % 60) * -1
       };
     }
 
@@ -33,9 +42,10 @@ function Countdown() {
   return (
     <div className="countdown">
       <div className="clock-card">
-        <h6>{timeLeft.days>=10?timeLeft.days:"0"+timeLeft.days} days</h6>
-        <h6>{timeLeft.hours>=10?timeLeft.hours:"0"+timeLeft.hours} hours</h6>
-        <h6>{timeLeft.minutes>=10?timeLeft.minutes:"0"+timeLeft.minutes} minutes</h6>
+        <h6>They have been married for</h6>
+        <h6>{timeLeft.days>=10?timeLeft.days:timeLeft.days} days</h6>
+        <h6>{timeLeft.hours>=10?timeLeft.hours:timeLeft.hours} hours</h6>
+        <h6>{timeLeft.minutes>=10?timeLeft.minutes:timeLeft.minutes} minutes</h6>
       </div>
     </div>
   )
