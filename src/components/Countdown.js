@@ -10,22 +10,16 @@ function Countdown() {
 
     let timeLeft = {};
 
-    if (difference > 0) {
+    if(difference < 0) {
+      difference *= -1;
+    }
+
       timeLeft = {
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
         hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
         minutes: Math.floor((difference / 1000 / 60) % 60),
         seconds: Math.floor((difference / 1000) % 60)
       };
-    }
-    else if (difference < 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)) * -1,
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24) * -1,
-        minutes: Math.floor((difference / 1000 / 60) % 60) * -1,
-        seconds: Math.floor((difference / 1000) % 60) * -1
-      };
-    }
 
     return timeLeft;
   }
